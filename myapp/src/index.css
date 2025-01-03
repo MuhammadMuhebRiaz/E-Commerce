@@ -190,7 +190,7 @@ nav{
 
 .subscribe input {
   flex: 1;
-  padding: 10px;
+  padding: 0.65rem;
   border: 1px solid #bbb;
   border-radius: 5px 0 0 5px;
   background-color: #000;
@@ -199,10 +199,10 @@ nav{
   border-right:none;
 }
 
-.subscribe button {
+.subscribe .subscribe-btn {
   border:1px solid #bbb;
-  padding:7px  15px 8px 8px;
-  margin-left:-20px;
+  padding:8px  15px 8px 8px;
+  margin-left:-10px;
   border-radius: 0 5px 5px 0;
   border-left:none;
   cursor: pointer;
@@ -216,6 +216,7 @@ nav{
   color: #fff;
   transform: rotate3d(0, 0, 1, 45deg);
   transition: color 0.3s;
+  margin-right:-30px;
 }
 .subscribe button i:hover{
   color: #ff0000;
@@ -411,155 +412,6 @@ textarea {
 .contact-form button:hover {
   background-color: #d62828;
 }
-
-
-
-/* General Styling */
-.content {
-  width: 100%;
-  padding:100px;
-  margin-top:200px;
-  font-family: "Poppins", sans-serif;
-}
-
-/* Our Story Section */
-.our-story {
-  width: 100%;
-  margin-left:60px;
-  margin-bottom:200px;
-}
-
-.our-story h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.our-story p {
-  font-size: 1rem;
-  line-height:1.8;
-  color: #666;
-  margin-bottom:40px;
-  max-width:500px;
-}
-
-.story-image {
-  position:absolute;
-  width: 705px;
-  height:609px;
-  top: 280px;
-  left: 814px;
-  gap: 0px;
-}
-.story-image img{
-  border-top-left-radius:5px;
-  border-bottom-left-radius:5px;
-}
-
-/* Stats Section */
-.stats {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  gap: 20px;
-  width:1,170px;
-  height:230px;
-  top: 1034px;
-  left: 135px;
-  gap: 30px;
-  opacity: 0px;
-}
-
-.stat-box {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  font-size: 1.1rem;
-}
-
-.stat-box.highlight {
-  background-color: #ff4d4d;
-  color: #fff;
-  font-weight: bold;
-}
-
-.stat-box span {
-  display: block;
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-/* Team Section */
-.team-section {
-  width: 100%;
-  padding: 50px 90px;
-  margin-left:2rem;;
-
-}
-
-.team-member {
-  transition: transform 0.3s ease-in-out;
-  margin-bottom:100px;
-}
-
-.team-member:hover {
-  transform: scale(1.05);
-}
-.team-member img {
-  width: 300px;
-  height:400px;
-  padding:20px;
-  margin-bottom: 15px;
-  background-color: #f9f9f9;
-}
-
-.team-member h3 {
-  font-size: 1.2rem;
-  margin: 10px 0 5px;
-}
-
-.team-member p {
-  font-size: 1rem;
-  color: #555;
-}
-.icon{
-  font-size:16px;
-  font-weight:300;
-  color: #555;
-  margin-right:15px;
-}
-
-
-/* Features Section */
-.features {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.features div {
-  text-align: center;
-  padding: 15px 20px;
-  font-size: 1.1rem;
-  color: #000;
-  background-color: #fff;
-  flex: 1;
-}
-.features div h1{
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.features div p{
-  font-size: 1rem;
-  color: #555;
-}
-
-
 
 .sign-up-container {
   display: flex;

@@ -14,7 +14,7 @@ function Footer() {
           <p>Get 10% off your first order</p>
           <div className="subscribe">
             <input type="email" placeholder="Enter your email" />
-            <button>
+            <button className="subscribe-btn">
               <i className="bi bi-send" aria-hidden="true"></i>
               <span className="visually-hidden">Send</span>
             </button>
