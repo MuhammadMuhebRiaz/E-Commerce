@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Image import statement 
+import 
+
 export default function Home() {
   return (
     <div>

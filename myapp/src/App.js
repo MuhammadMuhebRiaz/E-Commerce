@@ -10,6 +10,7 @@ import ErrorPage from './Components/ErrorPage';
 import Login from './Components/Login';
 import ShoppingCart from './Components/ShoppingCart';
 import MyAccount from './Components/MyAccount';
+import Wishlist from './Components/Wishlist';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/shoppingCart" element={<ShoppingCart />} />
         <Route path="*" element={<ErrorPage />} /> 
         <Route path="/myAccount" element={<MyAccount />} />
+        <Route path="/wishlist" element={<Wishlist/>} />
       </Routes>
       <Footer />
     </Router>

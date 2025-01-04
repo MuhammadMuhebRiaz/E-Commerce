@@ -3,10 +3,10 @@ import "../index.css";
 
 function EditProfile() {
   const [formData, setFormData] = useState({
-    firstName: "Md",
-    lastName: "Rimel",
-    email: "rimel111@gmail.com",
-    address: "Kingston, 5236, United State",
+    firstName: "",
+    lastName: "",
+    email: "",
+    address: "",
     currentPassword: "",
     newPassword: "",
     confirmPassword: "",

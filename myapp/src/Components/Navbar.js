@@ -69,7 +69,7 @@ function Navbar() {
 
           {/* Icons */}
           <div className="nav-icons">
-            <Link className="link-i" to="/"><i className="fa-regular fa-heart"></i></Link>
+            <Link className="link-i" to="/Wishlist"><i className="fa-regular fa-heart"></i></Link>
             <Link className="link-i" to="/ShoppingCart"><i className="fas fa-shopping-cart"></i></Link>
             <Link className="link-i" to="/MyAccount"><i className="fa-regular fa-user"></i></Link>
           </div>
