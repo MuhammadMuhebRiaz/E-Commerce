@@ -167,7 +167,8 @@ export default function About() {
         <img src={img10} alt="Customer Support" /> <br /> 
         <h1>24/7 Customer Service</h1> 
         <p>Friendly 24/7 customer support</p> 
-        </div> <div> <img src={img11} alt="Money Back Guarantee" /> <br /> 
+        </div> 
+        <div> <img src={img11} alt="Money Back Guarantee" /> <br /> 
         <h1>Money Back Guarantee</h1> 
         <p>We return money within 30 days</p> 
       </div>
