@@ -1,30 +1,16 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import "../index.css";
-import './i18n';
 
 function Navbar() {
-  const { t, i18n } = useTranslation();
-
-  // Handle language change
-  const handleLanguageChange = (e) => {
-    i18n.changeLanguage(e.target.value);
-  };
-
   return (
     <>
       {/* Top Bar */}
       <div className="main_navbar">
-        <h3>{t('sale_offer')}</h3>
-        <Link to="/home" className="shop-now-link">{t('shop_now')}</Link>
+        <h3>{('Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!')}</h3>
+        <Link to="/home" className="shop-now-link">{('shop_now')}</Link>
         <div className="language-selector">
-          <select
-            className="form-select"
-            aria-label="Language select"
-            onChange={handleLanguageChange}
-            value={i18n.language} // Set the default selected language
-          >
+          <select className="form-select" aria-label="Language select">
             <option value="en">English</option>
             <option value="es">Español - ES</option>
             <option value="ar">العربية - AR</option>
@@ -42,32 +28,21 @@ function Navbar() {
       {/* Main Navbar */}
       <div className="s_navbar">
         <div className="navbar">
-          {/* Logo */}
           <div className="logo">
-            <h1>{t('brand_name')}</h1>
+            <h1>{('Exclusive')}</h1>
           </div>
-
-          {/* Navigation Links */}
           <nav>
             <ul>
-              <NavLink to="/home" activeClassName="active">{t('home')}</NavLink>
-              <NavLink to="/contact" activeClassName="active">{t('contact')}</NavLink>
-              <NavLink to="/about" activeClassName="active">{t('about')}</NavLink>
-              <NavLink to="/signup" activeClassName="active">{t('signup')}</NavLink>
+              <NavLink to="/home" activeClassName="active">{('Home')}</NavLink>
+              <NavLink to="/contact" activeClassName="active">{('Contact')}</NavLink>
+              <NavLink to="/about" activeClassName="active">{('About')}</NavLink>
+              <NavLink to="/signup" activeClassName="active">{('Signup')}</NavLink>
             </ul>
           </nav>
-
-          {/* Search Bar */}
           <div className="search">
-            <input
-              type="text"
-              placeholder={t('search_placeholder')}
-              aria-label={t('search_placeholder')}
-            />
+            <input type="text" placeholder={('What are you looking for?')} aria-label={('search_placeholder')} />
             <i className="fas fa-search" aria-hidden="true"></i>
           </div>
-
-          {/* Icons */}
           <div className="nav-icons">
             <Link className="link-i" to="/Wishlist"><i className="fa-regular fa-heart"></i></Link>
             <Link className="link-i" to="/ShoppingCart"><i className="fas fa-shopping-cart"></i></Link>
@@ -78,5 +53,4 @@ function Navbar() {
     </>
   );
 }
-
 export default Navbar;
