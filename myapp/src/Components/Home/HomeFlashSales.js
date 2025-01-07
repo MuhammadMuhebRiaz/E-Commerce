@@ -62,7 +62,7 @@ export default function FlashSales() {
   return (
     <>
           <div className="flash-sales">
-      <div className="header">
+      <div className="flash_header">
         <div className="timer-container">
           <div className="timer">
             <div>

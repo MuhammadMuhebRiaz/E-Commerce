@@ -56,8 +56,7 @@ const Wishlist = () => {
             <div className="wishlist-item-actions">
               {item.discount && <span className="discount">-{item.discount}%</span>}
               {item.isNew && <span className="new">New</span>}
-            <img src={item.image} alt={item.name} className="item-image  item-img" />
-              
+            <img src={item.image} alt={item.name} className="item-image  item-img" /> 
             <button className="add-to-cart-btn">Add to Cart</button>
             </div>
             <div className="item-details">
