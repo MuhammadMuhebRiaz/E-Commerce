@@ -7,15 +7,8 @@ import AboutFeatures from "./About/AboutFeatures";
 import HomeBestSellingProducts from './Home/HomeBestSellingProducts'
 import MusicPromo from './Home/HomeMusicProma';
 import ExploreOurProducts from './Home/HomeExploreOurProducts';
+import NewArrival from "./Home/HomeNewArrival";
 
-
-import img25 from "./images/ps5-slim-goedkope-playstation_large 1.png"
-import img26 from "./images/woman-wearing-hat.png"
-import img27 from "./images/Speakers.png"
-import img28 from "./images/Perfume.png"
-import img29 from "./images/fastdelivery.png"
-import img30 from "./images/support.png"
-import img31 from "./images/money.png"
 
 
 export default function Home() {
@@ -40,6 +33,9 @@ return (
     </div>
     <div>
     <ExploreOurProducts/>
+    </div>
+    <div>
+      <NewArrival/>
     </div>
     <div className="Features">
       <AboutFeatures/>
