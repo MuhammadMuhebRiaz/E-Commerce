@@ -1,12 +1,12 @@
 import React from "react";
-import "../home.css";
+import "../../App.css";
 import img1 from "../images/Frame 605.png"
 import img2 from "../images/Frame 606.png"
 import img3 from "../images/Frame 610.png"
 import img4 from "../images/Frame 612.png"
 
 
-const BestSellingProducts = () => {
+export default function BestSellingProducts(){
   const products = [
     {
       name: "The north coat",
@@ -35,7 +35,6 @@ const BestSellingProducts = () => {
     {
       name: "Small BookShelf",
       price: "$360",
-      oldPrice: "$0",
       rating:2,
       reviews:45,
       image: img4,
@@ -53,31 +52,26 @@ const BestSellingProducts = () => {
         {products.map((product, index) => (
           <div className="product-card" key={index}>
             <div className="product-image">
-            <div className="actions">
-              <button className="likebtn">♥</button>
-              <button className="eyebtn">👁</button>
-            </div>
+              <div className="actions">
+                <button className="likebtn">♥</button>
+                <button className="eyebtn">👁</button>
+              </div>
               <img src={product.image} alt={product.name} />
             </div>
             <h3>{product.name}</h3>
-            <p className="price">
-              {product.price} <span className="old-price">{product.oldPrice}</span>
-            </p>
-            <p className="rating">
-            </p>
+            <p className="price">{product.price} <span className="old-price">{product.oldPrice}</span></p>
+            <p className="rating"></p>
             <div className="productstars">
-                {Array(5)
-                  .fill(0)
-                  .map((_, index) => (
-                    <span key={index} className={index < product.rating ? "star filled" : "star"} >★</span>
-                  ))}
-                <span className="rating-percentage">({product.reviews} reviews)</span>
-              </div>
+              {Array(5)
+                .fill(0)
+                .map((_, index) => (
+                  <span key={index} className={index < product.rating ? "star filled" : "star"} >★</span>
+              ))}
+              <span className="rating-percentage">({product.reviews} reviews)</span>
+            </div>
           </div>
         ))}
       </div>
     </div>
   );
 };
-
-export default BestSellingProducts;

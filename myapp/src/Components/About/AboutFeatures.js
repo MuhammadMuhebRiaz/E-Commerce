@@ -1,5 +1,5 @@
 import React from 'react'
-import '../About.css'
+import '../../App.css'
 import img1 from "../images/fastdelivery.png";
 import img2 from "../images/money.png";
 import img3 from "../images/support.png";

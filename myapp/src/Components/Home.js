@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "../App.css";
 import FlashSales from './Home/HomeFlashSales';
 import Browse from './Home/HomeBrowse';
 import SidebarCategories from './Home/HomeSidebarCategories';

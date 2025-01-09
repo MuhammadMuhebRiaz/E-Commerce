@@ -1,20 +1,17 @@
 import React from "react";
-import "../home.css";
-
-// Importing images
+import "../../App.css";
 import img1 from "../images/ps5-slim-goedkope-playstation_large 1.png";
 import img2 from "../images/woman-wearing-hat.png";
 import img3 from "../images/Speakers.png";
 import img4 from "../images/Perfume.png";
 
-const NewArrival = () => {
+export default function NewArrival() {
   return (
     <div className="NewArrival">
       <div className="featured">
         <p >Featured</p>
         <h1 >New Arrival</h1>
       </div>
-
       <div className="NewArrival-Container">
         <div className="NewArrival-Card large">
           <img src={img1} alt="PlayStation 5" />
@@ -55,5 +52,3 @@ const NewArrival = () => {
     </div>
   );
 };
-
-export default NewArrival;

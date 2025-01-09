@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import '../home.css';
+import '../../App.css';
 import img1 from "../images/Frame 694.png"
-
-const MusicPromoCard = () => {
+export default function MusicPromoCard(){
+    
     const [timeLeft, setTimeLeft] = useState({
         days: 5,
         hours: 23,
@@ -11,7 +11,7 @@ const MusicPromoCard = () => {
     });
 
     useEffect(() => {
-        const countdownDate = new Date().getTime() + 5 * 24 * 60 * 60 * 1000; // 5 days from now
+        const countdownDate = new Date().getTime() + 5 * 24 * 60 * 60 * 1000;
 
         const interval = setInterval(() => {
             const now = new Date().getTime();
@@ -33,10 +33,8 @@ const MusicPromoCard = () => {
                 clearInterval(interval);
             }
         }, 1000);
-
         return () => clearInterval(interval);
     }, []);
-
     return (
         <div className="Music-proma">
             <div className="promo-text">
@@ -68,5 +66,3 @@ const MusicPromoCard = () => {
         </div>
     );
 };
-
-export default MusicPromoCard;

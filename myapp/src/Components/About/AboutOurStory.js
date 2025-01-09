@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
+import '../../App.css';
 import img1 from "../images/About Side Image.png"; 
 import img2 from "../images/Services.png"; 
 import img3 from "../images/Monthly.png"; 
 import img4 from "../images/customer.png"; 
 import img5 from "../images/Annual.png"; 
 
-
-import "../About.css";
 export default function AboutOurStory() {
   return (
     <div>
