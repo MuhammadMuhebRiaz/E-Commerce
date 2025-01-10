@@ -11,11 +11,13 @@ import Login from './Components/Login';
 import ShoppingCart from './Components/ShoppingCart';
 import MyAccount from './Components/MyAccount';
 import Wishlist from './Components/Wishlist';
+import { CartProvider } from "react-use-cart";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <CartProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
@@ -28,6 +30,7 @@ function App() {
         <Route path="/myAccount" element={<MyAccount />} />
         <Route path="/wishlist" element={<Wishlist/>} />
       </Routes>
+      </CartProvider>
       <Footer />
     </Router>
   );
