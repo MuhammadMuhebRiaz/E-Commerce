@@ -1,83 +1,114 @@
-import React, { useState } from "react";
+import React from "react";
+import { useCart } from "react-use-cart";
 import "../index.css";
-import img1 from "./images/MonitorCartSmall.png";
-import img2 from "./images/GamepadCartSmall.png";
-function Cart() {
 
-    const [couponCode, setCouponCode] = useState("");
-  
-    const handleApplyCoupon = () => {
-      if (couponCode) {
-        alert(`Coupon "${couponCode}" applied!`);
-      } else {
-        alert("Please enter a coupon code.");
-      }
-    };
-  
-    const handleProceedToCheckout = () => {
-      alert("Proceeding to checkout...");
-    };
+export default function AddItemCart() {
+  const {
+    items,
+    isEmpty,
+    updateItemQuantity,
+    removeItem,
+    emptyCart,
+  } = useCart();
+
+  if (isEmpty) return <h1 className="text-center">Your Cart is Empty</h1>;
+
+  const manualCartTotal = items.reduce((total, item) => {
+    const price = parseFloat(item.price.replace('$', '')) || 0;
+    const quantity = item.quantity || 0;
+    return total + price * quantity;
+  }, 0);
+
+  const safeCartTotal = manualCartTotal || 0;
 
   return (
-    <div className="cart-page">
+    <section className="py-5">
+      <div className="row ">
+        <div className="col-md-10">
+          <div className="shadow-lg">
+            <div className="card-body">
+              <table className="table-striped">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {items.map((item, index) => {
+                    const price = parseFloat(item.price.replace('$', '')) || 0;
+                    const quantity = parseInt(item.quantity, 10) || 0;
 
-      <div className="cart-container">
-        <table className="cart-table">
-          <thead>
-            <tr>
-              <th>Product</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Subtotal</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="cart-item1">
-              <td>
-                <img src={img1} alt="IPS LCD" />
-                <span>LCD Monitor</span>
-              </td>
-              <td>$650</td>
-              <td>
-                <input type="number" defaultValue="1" min="1" />
-              </td>
-              <td>$650</td>
-            </tr>
-            <tr className="cart-item2">
-              <td>
-              <img src={img2} alt="IPS LCD" />
-              <span>H1 Gamepad</span>
-              </td>
-              <td>$550</td>
-              <td>
-                <input type="number" defaultValue="2" min="1" />
-              </td>
-              <td>$1100</td>
-            </tr>
-          </tbody>
-        </table>
-        <div className="cart-actions">
-          <button>Return To Shop</button>
-          <button>Update Cart</button>
-        </div>
-        <div className="cart-summary">
-        <div className="container">
-        <div className="coupon-section">
-            <input type="text" placeholder="Coupon Code" value={couponCode} onChange={(e) => setCouponCode(e.target.value)}/>
-            <button className="button" id="applyCoupon" onClick={handleApplyCoupon}>Apply Coupon</button>
-        </div>
-        <div className="cart-total">
-            <h3>Cart Total</h3>
-            <p><span>Subtotal</span> <span>$1750</span></p>
-            <p><span>Shipping</span> <span>Free</span></p>
-            <p className="total"><span>Total</span> <span>$1750</span></p>
-            <button className="button" id="proceedToCheckout" onClick={handleProceedToCheckout}>Proceed to Checkout</button>        
+                    return (
+                      <tr key={index}>
+                        <td>
+                          <div className="d-flex">
+                            <img
+                              src={item.image}
+                              className="img-thumbnail"
+                              style={{ height: "4rem", width: "4rem" }}
+                              alt="Product"
+                            />
+                            <p className="mb-0">{item.title}</p>
+                          </div>
+                        </td>
+                        <td>${price.toFixed(2)}</td>
+                        <td>
+                          <div className="d-flex">
+                            <button
+                              className="minus"
+                              onClick={() =>
+                                updateItemQuantity(item.id, quantity - 1)
+                              }
+                              disabled={quantity <= 1}
+                            >
+                              -
+                            </button>
+                            <span className="mx-2">{quantity}</span>
+                            <button
+                              className="plus "
+                              onClick={() =>
+                                updateItemQuantity(item.id, quantity + 1)
+                              }
+                            >
+                              +
+                            </button>
+                          </div>
+                        </td>
+                        <td>
+                          <button
+                            className="btn-sm"
+                            onClick={() => removeItem(item.id)}
+                          >
+                            Remove
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
             </div>
-    </div>
+            <div className="empty_btn">
+              <button className="btn-sm me-2" >Return To Shop</button>
+              <button className="btn-sm me-2" onClick={() => emptyCart()} >Empty Cart </button>
+            </div>
+            <div className="card-footer">
+              <div className="align-items-center">
+                <h1>Cart Total</h1>
+                <h5 className="mb-0">Subtotle: <span>${safeCartTotal.toFixed(2)}</span></h5>
+                <h5 className="mb-0">Shipping: <span>Free</span></h5>
+                <h5 className="mb-0">Total:    <span>${safeCartTotal.toFixed(2)}</span></h5>
+                <div>
+                  <button className=" btn-sm">Procees to Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
-
-export default Cart;

@@ -91,7 +91,7 @@ export default function FlashSales() {
                       <span className="rating-percentage">({item.ratingPercentage})</span>
                     </div>
                     <div className="button-container">
-                    <button className="btn add-to-cart" onClick={() => addItem(item)}>Add to cart</button>
+                    <button className="btn add-to-cart" onClick={() => addItem(item )}>Add to cart</button>
                     <button className="btn buy-now">Buy Now </button>
                     </div>
                   </div>

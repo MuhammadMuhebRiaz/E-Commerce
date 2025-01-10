@@ -9,8 +9,8 @@ function Navbar() {
       <div className="main_navbar">
         <h3>{('Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!')}</h3>
         <Link to="/home" className="shop-now-link">{('ShopNow')}</Link>
-        <div className="language-selector">
-          <select className="form-select" aria-label="Language select">
+        <div className="language_selector">
+          <select className="form_select" aria-label="Language select">
             <option value="en">English</option>
             <option value="es">Español - ES</option>
             <option value="ar">العربية - AR</option>
