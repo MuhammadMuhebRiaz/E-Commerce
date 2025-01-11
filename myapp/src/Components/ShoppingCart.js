@@ -13,8 +13,11 @@ export default function AddItemCart() {
 
   if (isEmpty) return <h1 className="text-center">Your Cart is Empty</h1>;
 
+  // Calculate total price manually
   const manualCartTotal = items.reduce((total, item) => {
-    const price = parseFloat(item.price.replace('$', '')) || 0;
+    const price = typeof item.price === 'string' 
+      ? parseFloat(item.price.replace('$', '')) 
+      : parseFloat(item.price) || 0;
     const quantity = item.quantity || 0;
     return total + price * quantity;
   }, 0);
@@ -23,7 +26,7 @@ export default function AddItemCart() {
 
   return (
     <section className="py-5">
-      <div className="row ">
+      <div className="row">
         <div className="col-md-10">
           <div className="shadow-lg">
             <div className="card-body">
@@ -38,7 +41,9 @@ export default function AddItemCart() {
                 </thead>
                 <tbody>
                   {items.map((item, index) => {
-                    const price = parseFloat(item.price.replace('$', '')) || 0;
+                    const price = typeof item.price === 'string' 
+                      ? parseFloat(item.price.replace('$', '')) 
+                      : parseFloat(item.price) || 0;
                     const quantity = parseInt(item.quantity, 10) || 0;
 
                     return (
@@ -68,7 +73,7 @@ export default function AddItemCart() {
                             </button>
                             <span className="mx-2">{quantity}</span>
                             <button
-                              className="plus "
+                              className="plus"
                               onClick={() =>
                                 updateItemQuantity(item.id, quantity + 1)
                               }
@@ -92,17 +97,23 @@ export default function AddItemCart() {
               </table>
             </div>
             <div className="empty_btn">
-              <button className="btn-sm me-2" >Return To Shop</button>
-              <button className="btn-sm me-2" onClick={() => emptyCart()} >Empty Cart </button>
+              <button className="btn-sm me-2">Return To Shop</button>
+              <button className="btn-sm me-2" onClick={() => emptyCart()}>
+                Empty Cart
+              </button>
             </div>
             <div className="card-footer">
               <div className="align-items-center">
                 <h1>Cart Total</h1>
-                <h5 className="mb-0">Subtotle: <span>${safeCartTotal.toFixed(2)}</span></h5>
+                <h5 className="mb-0">
+                  Subtotal: <span>${safeCartTotal.toFixed(2)}</span>
+                </h5>
                 <h5 className="mb-0">Shipping: <span>Free</span></h5>
-                <h5 className="mb-0">Total:    <span>${safeCartTotal.toFixed(2)}</span></h5>
+                <h5 className="mb-0">
+                  Total: <span>${safeCartTotal.toFixed(2)}</span>
+                </h5>
                 <div>
-                  <button className=" btn-sm">Procees to Checkout</button>
+                  <button className="btn-sm">Proceed to Checkout</button>
                 </div>
               </div>
             </div>

@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { useCart } from "react-use-cart";
 import "../index.css";
 
 function Navbar() {
+
+  const { totalItems } = useCart(); 
+
   return (
     <>
       {/* Top Bar */}
@@ -45,7 +49,25 @@ function Navbar() {
           </div>
           <div className="nav-icons">
             <Link className="link-i" to="/Wishlist"><i className="fa-regular fa-heart"></i></Link>
-            <Link className="link-i" to="/ShoppingCart"><i className="fas fa-shopping-cart"></i></Link>
+            <Link className="link-i" to="/ShoppingCart">
+            <i className="fas fa-shopping-cart"></i>
+            {totalItems > 0 && (
+              <span
+                style={{
+                  backgroundColor: "red",
+                  color: "white",
+                  borderRadius: "50%",
+                  padding: "0.10rem 0.20rem",
+                  fontSize: "10px",
+                  position: "absolute",
+                  top: "2px",
+                  right: "24px",
+                }}
+              >
+                {totalItems}
+              </span>
+            )}
+            </Link>
             <Link className="link-i" to="/MyAccount"><i className="fa-regular fa-user"></i></Link>
           </div>
         </div>

@@ -8,31 +8,52 @@ box-sizing: border-box;
 .home-container {
 display: flex;
 font-family:"Poppins", sans-serif;
-margin: 100px ;
 }
 .sidebar {
-padding:0px 20px;
+  width: 25%;
+  height: auto;
+  padding:70px 60px;
+  margin-right:-100px;
+  font-family:"Poppins", sans-serif;
 }
-.sidebar ul {
+.sidebar ul li{
 list-style-type: none;
-padding: 0;
 }
-.sidebar ul li {
+.sidebar ul li a{
 margin: 2px 0;
 cursor: pointer;
 font-size: 16px;
 color: #333;
+text-decoration: none;
 }
-.sidebar ul li:hover {
+.sidebar ul li a:hover {
 color: #f81818;
 }
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding:12px 40px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar li.active {
+  color: red;
+}
+
 .main-banner {
-width: 80%;
+width: 75%;
 height: 400px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 20px;
+padding: 50px;
+margin-top:82px;
 background-color: #000;
 color: #fff;
 position: relative;
@@ -94,7 +115,7 @@ transform: scaleX(2);
 margin-left: 20px;
 }
 .banner-image {
-max-width: 50%;
+max-width: 40%;
 border-radius: 10px;
 }
 /* Dots Navigation */
@@ -127,7 +148,7 @@ border:2px  solid #fff;
 /* HomeFlashSales */
 .flash-sales {
 width: 90%;
-margin: 100px auto;
+margin: 0 auto;
 padding-bottom:50px;
 border-bottom:2px solid #8e8e8e3c;
 font-family: "Poppins", sans-serif;
@@ -152,7 +173,6 @@ padding-left:7px;
 color: red;
 }
 .flash-sales .card {
-flex: 0 0 22.50%;
 margin: 0 10px;
 background: #fff;
 text-align: center;
@@ -835,6 +855,73 @@ background: red;
 color: white;
 }
 /* HomeNewArrival */
+
+
+/* Women'sFashion */
+.women-fashion{
+  display: flex;
+}
+.women-fashion-container {
+    width: 80%;
+    max-width:1200px;
+    font-family: sans-serif;
+    text-align: right;
+    margin-bottom:100px;
+  }
+  
+  .women-fashion-container h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .women-fashion-container .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .women-fashion-container .product-card {
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.364);
+  }
+  
+  .women-fashion-container .product-image {
+    width:100%;
+    height:300px;
+    margin-bottom: 10px;
+  }
+
+  
+  .women-fashion-container .product-card h3 {
+    font-size: 1.2rem;
+    margin:5px 20px;
+    color: #555;
+  }
+  
+  .women-fashion-container .product-card p {
+    font-size: 1rem;
+    color: #888;
+    margin:10px 30px;
+  }
+  
+  .women-fashion-container .product-card .add-cart-btn {
+    background-color: #ff4081;
+    color: #fff;
+    width: 100%;
+    height:40px;
+    margin: 0 !important;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  
+  .women-fashion-container .product-card .add-cart-btn:hover {
+    background-color: #e73570;
+  }
+  
+/* Women'sFashion */
 
 
 /* About */

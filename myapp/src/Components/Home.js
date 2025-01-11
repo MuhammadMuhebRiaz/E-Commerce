@@ -1,45 +1,28 @@
 import React from "react";
 import "../App.css";
-import FlashSales from './Home/HomeFlashSales';
-import Browse from './Home/HomeBrowse';
-import SidebarCategories from './Home/HomeSidebarCategories';
+import FlashSales from "./Home/HomeFlashSales";
+import Browse from "./Home/HomeBrowse";
+import Categories from "./Home/HomeCategories";
 import AboutFeatures from "./About/AboutFeatures";
-import HomeBestSellingProducts from './Home/HomeBestSellingProducts'
-import MusicPromo from './Home/HomeMusicProma';
-import ExploreOurProducts from './Home/HomeExploreOurProducts';
+import HomeBestSellingProducts from "./Home/HomeBestSellingProducts";
+import MusicPromo from "./Home/HomeMusicProma";
+import ExploreOurProducts from "./Home/HomeExploreOurProducts";
 import NewArrival from "./Home/HomeNewArrival";
 
-
-
 export default function Home() {
-
-
-return (
-  <>
+  return (
     <div>
-      <SidebarCategories/>
+      {/* Static Components */}
+      <Categories />
+      <FlashSales />
+      <Browse />
+      <HomeBestSellingProducts />
+      <MusicPromo />
+      <ExploreOurProducts />
+      <NewArrival />
+      <div className="Features">
+        <AboutFeatures />
+      </div>
     </div>
-    <div>
-      <FlashSales/>
-    </div>
-    <div>
-      <Browse/>
-    </div>
-    <div>
-      <HomeBestSellingProducts/>
-    </div>
-    <div>
-      <MusicPromo/>
-    </div>
-    <div>
-    <ExploreOurProducts/>
-    </div>
-    <div>
-      <NewArrival/>
-    </div>
-    <div className="Features">
-      <AboutFeatures/>
-    </div>
-  </>
-);
+  );
 }

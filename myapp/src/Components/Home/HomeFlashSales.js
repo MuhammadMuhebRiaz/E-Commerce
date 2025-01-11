@@ -5,7 +5,7 @@ import HomeData from "./HomeData";
 
 export default function FlashSales() {
 
-  const { addItem } = useCart();
+const { addItem } = useCart();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 3,

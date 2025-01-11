@@ -12,26 +12,29 @@ import ShoppingCart from './Components/ShoppingCart';
 import MyAccount from './Components/MyAccount';
 import Wishlist from './Components/Wishlist';
 import { CartProvider } from "react-use-cart";
+import WomenFashion from "./Components/Home/Women-Fashion";
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <CartProvider>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/shoppingCart" element={<ShoppingCart />} />
-        <Route path="*" element={<ErrorPage />} /> 
-        <Route path="/myAccount" element={<MyAccount />} />
-        <Route path="/wishlist" element={<Wishlist/>} />
-      </Routes>
-      </CartProvider>
+      <Navbar />
+        <Routes>
+          {/* Define standalone routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/women-fashion" element={<WomenFashion />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/shoppingCart" element={<ShoppingCart />} />
+          <Route path="/myAccount" element={<MyAccount />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="*" element={<ErrorPage />} /> {/* Catch-all route */}
+        </Routes>
       <Footer />
+      </CartProvider>
     </Router>
   );
 }
