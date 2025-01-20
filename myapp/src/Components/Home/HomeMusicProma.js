@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../../App.css';
 import img1 from "../images/Frame 694.png"
-export default function MusicPromoCard(){
+import { useNavigate } from "react-router-dom"; 
+
+export default function MusicPromoCard({ product }) { // Accept product as a prop
     
+    const navigate = useNavigate();
     const [timeLeft, setTimeLeft] = useState({
         days: 5,
         hours: 23,
@@ -35,6 +38,7 @@ export default function MusicPromoCard(){
         }, 1000);
         return () => clearInterval(interval);
     }, []);
+
     return (
         <div className="Music-proma">
             <div className="promo-text">
@@ -58,7 +62,7 @@ export default function MusicPromoCard(){
                         <p>Seconds</p>
                     </div>
                 </div>
-                <button className="btn">Buy Now!</button>
+                <button className="btn"  onClick={() => navigate('/buynow', { state: { product } })}>Buy Now!</button>
             </div>
             <div className="promo-image">
                 <img src={img1} alt="Product" />

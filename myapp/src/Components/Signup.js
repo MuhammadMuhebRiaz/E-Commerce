@@ -7,12 +7,10 @@ import { faGoogle} from '@fortawesome/free-brands-svg-icons';
 const SignUp = () => {
   return (
     <div className="sign-up-container">
-      {/* Left Image Section */}
       <div className="image-section">
         <img src={phoneImage} alt="Phone and Shopping Cart" />
       </div>
 
-      {/* Sign-Up Form Section */}
       <div className="form-section">
         <h2>Create an account</h2>
         <p>Enter your details below</p>

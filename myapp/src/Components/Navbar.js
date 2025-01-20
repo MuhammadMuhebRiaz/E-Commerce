@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useCart } from "react-use-cart";
 import "../index.css";
 
 function Navbar() {
-
   const { totalItems } = useCart(); 
 
   return (
     <>
       {/* Top Bar */}
       <div className="main_navbar">
-        <h3>{('Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!')}</h3>
-        <Link to="/home" className="shop-now-link">{('ShopNow')}</Link>
+        <h3>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</h3>
+        <NavLink to="/home" className="shop-now-NavLink">ShopNow</NavLink>
         <div className="language_selector">
           <select className="form_select" aria-label="Language select">
             <option value="en">English</option>
@@ -33,46 +32,59 @@ function Navbar() {
       <div className="s_navbar">
         <div className="navbar">
           <div className="logo">
-            <h1>{('Exclusive')}</h1>
+            <h1>Exclusive</h1>
           </div>
           <nav>
             <ul>
-              <NavLink to="/home" activeClassName="active">{('Home')}</NavLink>
-              <NavLink to="/contact" activeClassName="active">{('Contact')}</NavLink>
-              <NavLink to="/about" activeClassName="active">{('About')}</NavLink>
-              <NavLink to="/signup" activeClassName="active">{('Signup')}</NavLink>
+              <li>
+                <NavLink to="/home" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
+              </li>
+              <li>
+                <NavLink to="/signup" className={({ isActive }) => isActive ? "active" : ""}>Signup</NavLink>
+              </li>
             </ul>
           </nav>
           <div className="search">
-            <input type="text" placeholder={('What are you looking for?')} aria-label={('search_placeholder')} />
+            <input type="text" placeholder="What are you looking for?" aria-label="search_placeholder" />
             <i className="fas fa-search" aria-hidden="true"></i>
           </div>
           <div className="nav-icons">
-            <Link className="link-i" to="/Wishlist"><i className="fa-regular fa-heart"></i></Link>
-            <Link className="link-i" to="/ShoppingCart">
-            <i className="fas fa-shopping-cart"></i>
-            {totalItems > 0 && (
-              <span
-                style={{
-                  backgroundColor: "red",
-                  color: "white",
-                  borderRadius: "50%",
-                  padding: "0.10rem 0.20rem",
-                  fontSize: "10px",
-                  position: "absolute",
-                  top: "2px",
-                  right: "24px",
-                }}
-              >
-                {totalItems}
-              </span>
-            )}
-            </Link>
-            <Link className="link-i" to="/MyAccount"><i className="fa-regular fa-user"></i></Link>
+            <NavLink className={({ isActive }) => isActive ? "active" : "NavLink-i"} to="/Wishlist">
+              <i className="fa-regular fa-heart"></i>
+            </NavLink>
+            <NavLink className={({ isActive }) => isActive ? "active" : "NavLink-i"} to="/ShoppingCart">
+              <i className="fas fa-shopping-cart"></i>
+              {totalItems > 0 && (
+                <span 
+                  style={{
+                    backgroundColor: "red",
+                    color: "white",
+                    borderRadius: "50%",
+                    padding: "0.20rem 0.40rem",
+                    fontSize: "10px",
+                    position: "absolute",
+                    top: "0px",
+                    right: "35px",
+                  }}
+                >
+                  {totalItems}
+                </span>
+              )}
+            </NavLink>
+            <NavLink className={({ isActive }) => isActive ? "active" : "NavLink-i"} to="/MyAccount">
+              <i className="fa-regular fa-user"></i>
+            </NavLink>
           </div>
         </div>
       </div>
     </>
   );
 }
+
 export default Navbar;

@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from "react";
-import '../../App.css'
-import {useCart} from "react-use-cart";
+import "../../App.css";
+import { useCart } from "react-use-cart";
 import HomeData from "./HomeData";
+import { useNavigate } from "react-router-dom"; 
 
 export default function FlashSales() {
+  const { addItem } = useCart();
+  const navigate = useNavigate(); 
 
-const { addItem } = useCart();
-
+  // Timer State
   const [timeLeft, setTimeLeft] = useState({
     days: 3,
     hours: 23,
     minutes: 19,
     seconds: 56,
   });
-  
+
+  // Timer Logic
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prevTime) => {
@@ -28,81 +31,122 @@ const { addItem } = useCart();
         return { days: 0, hours: 0, minutes: 0, seconds: 0 };
       });
     }, 1000);
-  
     return () => clearInterval(timer);
   }, []);
+
+  // Slider States
   const [flashIndex, setFlashIndex] = useState(0);
-  
+  const [viewCount, setViewCount] = useState(4);
+
+  // Navigation Handlers
   const handlePrev = () => {
-    setFlashIndex((prevIndex) =>
-      prevIndex === 0 ? HomeData.productData2.length- 4 : prevIndex - 1
-    );
+    if (HomeData.productData2.length > 4) {
+      setFlashIndex((prevIndex) =>
+        prevIndex === 0 ? Math.max(HomeData.productData2.length - 4, 0) : prevIndex - 1
+      );
+    }
   };
   
   const handleNext = () => {
-    setFlashIndex((prevIndex) =>
-      prevIndex === HomeData.productData2.length - 4 ? 0 : prevIndex + 1
-    );
+    if (HomeData.productData2.length > 4) {
+      setFlashIndex((prevIndex) =>
+        prevIndex >= HomeData.productData2.length - 4 ? 0 : prevIndex + 1
+      );
+    }
   };
+
+  const handleViewMore = () => setViewCount(HomeData.productData2.length);
+  const handleClose = () => setViewCount(4);
 
   return (
     <div className="flash-sales">
+      {/* Header with Timer */}
       <div className="flash_header">
         <div className="timer-container">
-          <div className="timer">
-            <div>
-              <p>Days</p>
-              <span>{timeLeft.days}:</span>
-            </div>
-            <div>
-              <p>Hours</p>
-              <span>{timeLeft.hours}:</span>
-            </div>
-            <div>
-              <p>Minutes</p>
-              <span>{timeLeft.minutes}:</span>
-            </div>
-            <div>
-              <p>Seconds</p>
-              <span>{timeLeft.seconds}</span>
-            </div>
-          </div>
+        <div className="timer">
+  {["days", "hours", "minutes", "seconds"].map((unit, index) => (
+    <div key={unit} className="time-segment">
+      <span className="time-value">{timeLeft[unit]}</span>
+      {index < 3 && <span className="time-separator"></span>}
+      <p className="time-label">{unit.charAt(0).toUpperCase() + unit.slice(1)}</p>
+    </div>
+  ))}
+</div>
+
         </div>
         <h1>Today's</h1>
-             <br/>
         <h2>Flash Sales</h2>
       </div>
-      <button className="nav-btn left-btn" onClick={handlePrev}> {"<"} </button>
-      <button className="nav-btn right-btn" onClick={handleNext}> {">"} </button>
+
+      {/* Navigation Buttons */}
+      {viewCount === 4 && (
+        <>
+          <button className="nav-btn left-btn" onClick={handlePrev}> {"<"} </button>
+          <button className="nav-btn right-btn" onClick={handleNext}> {">"} </button>
+        </>
+      )}
+
+      {/* Product Cards */}
       <div className="slider-container">
-        <div className="slider">
-        {HomeData.productData2.slice(flashIndex, flashIndex + 4).map((item) => (
-                  <div key={item.id} className="card explorecard">
-                    {item.isNew && <span className="new">New</span>}
-                    <img src={item.image} alt={item.title} />
-                    <h3>{item.title}</h3>
-                    <p className="price"><span>{item.price}</span>{" "}</p>
-                    <div className="stars">
-                      {Array(5)
-                        .fill(0)
-                        .map((_, index) => (
-                          <span key={index} className={index < item.rating ? "star filled" : "star"}>★</span>
-                        ))}
-                      <span className="rating-percentage">({item.ratingPercentage})</span>
-                    </div>
-                    <div className="button-container">
-                    <button className="btn add-to-cart" onClick={() => addItem(item )}>Add to cart</button>
-                    <button className="btn buy-now">Buy Now </button>
-                    </div>
-                  </div>
-          ))}
+        <div className="slider" style={{ display: "flex", flexWrap: "wrap" }}>
+          {HomeData.productData2
+            .slice(
+              viewCount === 4 ? flashIndex : 0,
+              viewCount === 4 ? flashIndex + 4 : viewCount
+            )
+            .map((item) => (
+              <div key={item.id} className="card explorecard">
+                {item.isNew && <span className="new">New</span>}
+                <img src={item.image} alt={item.title} onClick={() => navigate(`/product/${item.id}`, { state: { product: item } })}/>
+                <h3>{item.title}</h3>
+                <p className="price">
+                  <span>${item.price}</span>
+                </p>
+                <div className="stars">
+                  {Array(5)
+                    .fill(0)
+                    .map((_, index) => (
+                      <span
+                        key={index}
+                        className={index < item.rating ? "star filled" : "star"}
+                      >
+                        ★
+                      </span>
+                    ))}
+                  <span className="rating-percentage">
+                    ({item.ratingPercentage})
+                  </span>
+                </div>
+                <div className="button-container">
+                  <button
+                    className="btn add-to-cart"
+                    onClick={() => addItem(item)}
+                  >
+                    Add to cart
+                  </button>
+                  <button
+                    className="btn buy-now"
+                    onClick={() => navigate('/buynow', { state: { product: item } })}
+                  >
+                    Buy Now
+                  </button>
+
+                </div>
+              </div>
+            ))}
         </div>
+
+        {/* View All / Close Buttons */}
         <div className="view-all-products-container">
           <div className="ViewallProducts">
-            <button>View All Products</button>
+            {viewCount < HomeData.productData2.length ? (
+              <button onClick={handleViewMore}>View All Products</button>
+            ) : (
+              <button onClick={handleClose}>Close</button>
+            )}
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

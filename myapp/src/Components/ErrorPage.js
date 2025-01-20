@@ -1,16 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../index.css";
 
-
 const ErrorPage = () => {
+  const navigate = useNavigate(); 
+
+  const goHome = () => {
+    navigate("/home"); 
+  };
+
   return (
     <div className="error-page">
       <div className="error-content">
         <h1 className="error-title">404 Not Found</h1>
         <p className="error-message">
-          Your visited page not found. You may go home page.
+          The page you are looking for does not exist. You may return to the home page or go back to your previous page.
         </p>
-        <button className="home-button" onClick={() => (window.location.href = "/Home")}>Back to home page</button>
+        <div className="button-container">
+          <button className="home-button" onClick={goHome}>Back to Home</button>
+        </div>
       </div>
     </div>
   );

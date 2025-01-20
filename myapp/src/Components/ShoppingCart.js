@@ -1,5 +1,6 @@
 import React from "react";
 import { useCart } from "react-use-cart";
+import { useNavigate } from "react-router-dom";
 import "../index.css";
 
 export default function AddItemCart() {
@@ -10,6 +11,8 @@ export default function AddItemCart() {
     removeItem,
     emptyCart,
   } = useCart();
+
+  const navigate = useNavigate();
 
   if (isEmpty) return <h1 className="text-center">Your Cart is Empty</h1>;
 
@@ -55,6 +58,11 @@ export default function AddItemCart() {
                               className="img-thumbnail"
                               style={{ height: "4rem", width: "4rem" }}
                               alt="Product"
+                              onClick={() =>
+                                navigate(`/product/${item.id}`, {
+                                  state: { product: item },
+                                })
+                              }
                             />
                             <p className="mb-0">{item.title}</p>
                           </div>
@@ -71,12 +79,12 @@ export default function AddItemCart() {
                             >
                               -
                             </button>
-                            <span className="mx-2">{quantity}</span>
+                            <span className="quantitys">{quantity}</span>
                             <button
-                              className="plus"
                               onClick={() =>
                                 updateItemQuantity(item.id, quantity + 1)
                               }
+                              className="plus"
                             >
                               +
                             </button>
@@ -97,7 +105,12 @@ export default function AddItemCart() {
               </table>
             </div>
             <div className="empty_btn">
-              <button className="btn-sm me-2">Return To Shop</button>
+              <button
+                className="btn-sm me-2"
+                onClick={() => navigate("/men-fashion")} // Navigate to the shop page
+              >
+                Return To Shop
+              </button>
               <button className="btn-sm me-2" onClick={() => emptyCart()}>
                 Empty Cart
               </button>
@@ -113,7 +126,15 @@ export default function AddItemCart() {
                   Total: <span>${safeCartTotal.toFixed(2)}</span>
                 </h5>
                 <div>
-                  <button className="btn-sm">Proceed to Checkout</button>
+                  <button
+                    className="btn-sm"
+                    onClick={() => {
+                      localStorage.setItem("cartData", JSON.stringify({ items, safeCartTotal }));
+                      navigate("/ProceedToCheckout");
+                    }}
+                  >
+                    Proceed to Checkout
+                  </button>
                 </div>
               </div>
             </div>

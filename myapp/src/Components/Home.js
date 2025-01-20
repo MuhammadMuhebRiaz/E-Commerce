@@ -6,6 +6,7 @@ import Categories from "./Home/HomeCategories";
 import AboutFeatures from "./About/AboutFeatures";
 import HomeBestSellingProducts from "./Home/HomeBestSellingProducts";
 import MusicPromo from "./Home/HomeMusicProma";
+import img1 from "./images/Frame 694.png"; // Correctly import the image
 import ExploreOurProducts from "./Home/HomeExploreOurProducts";
 import NewArrival from "./Home/HomeNewArrival";
 
@@ -17,7 +18,8 @@ export default function Home() {
       <FlashSales />
       <Browse />
       <HomeBestSellingProducts />
-      <MusicPromo />
+      {/* Pass the correct image reference */}
+      <MusicPromo product={{ title: "Enhance Your Music Experience", image: img1, price: 500 }} />
       <ExploreOurProducts />
       <NewArrival />
       <div className="Features">
