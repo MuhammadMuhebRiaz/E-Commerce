@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState ,useEffect} from "react";
 import "../../App.css";
-import HomeData from "./HomeData";
 import { useNavigate } from "react-router-dom";
 
 export default function NewArrival() {
   const navigate = useNavigate();
+  const [newarrival, setNewarrival] = useState([]);
+  
+      useEffect(()=>{
+        fetch("https://e-commerce-app-33918-default-rtdb.firebaseio.com/newArrival.json")
+        .then((response) =>{
+          response.json().then((result) => {
+            setNewarrival(result);
+          })
+        })
+      });
+
   return (
     <div className="NewArrival">
       <div className="featured">
@@ -12,10 +22,10 @@ export default function NewArrival() {
         <h1>New Arrival</h1>
       </div>
       <div className="NewArrival-Container">
-        {HomeData.NewArrival.map((item) => (
+        {newarrival.map((item) => (
           <div key={item.id} className={`NewArrival-Card ${item.size}`}>
             <img 
-            src={item.image} 
+            src={`/images/${item.image}` || ""} 
             alt={item.title}  
             onClick={() =>
               navigate(`/product/${item.id}`, {

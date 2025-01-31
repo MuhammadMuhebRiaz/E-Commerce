@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../App.css";
-import HomeData from "./HomeData";
 import { useNavigate } from "react-router-dom";
 
 export default function BestSellingProducts({ title }) {
   const navigate = useNavigate();
   const [viewCount, setViewCount] = useState(4);
+  const [bestselling, setBestselling] = useState([]);
 
+  // Fetch Flash Sales Data
+   // Fetch Flash Sales Data
+   useEffect(()=>{
+     fetch("https://e-commerce-app-33918-default-rtdb.firebaseio.com/bestsellingproducts.json")
+     .then((response) =>{
+       response.json().then((result) => {
+         setBestselling(result);
+       })
+     })
+   });
 
   const handleViewMore = () => {
-    setViewCount(HomeData.productData2.length);
+    if (bestselling.length > 0) {
+      setViewCount(bestselling.length);
+    }
   };
 
   const handleClose = () => {
@@ -20,8 +32,8 @@ export default function BestSellingProducts({ title }) {
     <div className="best-selling-products">
       <div className="header">
         <h4>This Month</h4>
-        <h2>{title || "Best Selling Product"}</h2>
-        {viewCount < HomeData.productData2.length ? (
+        <h2>{title || "Best Selling Products"}</h2>
+        {viewCount < bestselling.length ? (
           <div>
             <button className="view-all-button" onClick={handleViewMore}>
               View All
@@ -37,8 +49,8 @@ export default function BestSellingProducts({ title }) {
       </div>
 
       <div className="product-grid">
-        {HomeData?.BestSellingProducts?.length ? (
-          HomeData.BestSellingProducts.slice(0, viewCount).map((product, index) => (
+        {bestselling.length > 0 ? (
+          bestselling.slice(0, viewCount).map((product, index) => (
             <div className="product-card" key={index}>
               <div
                 className="product-image"
@@ -50,7 +62,7 @@ export default function BestSellingProducts({ title }) {
                   <button className="likebtn">♥</button>
                   <button className="eyebtn">👁</button>
                 </div>
-                <img src={product.image} alt={product.title} />
+                <img src={`/images/${product.image}` || ""} alt={product.title} />
               </div>
               <h3>{product.title}</h3>
               <p className="price">

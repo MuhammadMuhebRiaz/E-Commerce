@@ -1,20 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../App.css";
 import { useCart } from "react-use-cart";
-import HomeData from "./HomeData";
 import { useNavigate } from "react-router-dom";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 
 export default function ExploreOurProducts() {
   const { addItem } = useCart();
-  const navigate = useNavigate();
+  const navigate = useNavigate()
+    const [exploreourproducts, setExploreourproducts] = useState([]);
+  
+    // Fetch Flash Sales Data
+    useEffect(()=>{
+      fetch("https://e-commerce-app-33918-default-rtdb.firebaseio.com/exploreourproducts.json")
+      .then((response) =>{
+        response.json().then((result) => {
+          setExploreourproducts(result);
+        })
+      })
+    });;
 
   const [ratings, setRatings] = useState(
-    HomeData.productData.map(() => null) 
+    exploreourproducts.map(() => null) 
   );
   const [hoverRatings, setHoverRatings] = useState(
-    HomeData.productData.map(() => -1)
+    exploreourproducts.map(() => -1)
   );
 
   const [ExploreIndex, setExploreIndex] = useState(0);
@@ -24,7 +34,7 @@ export default function ExploreOurProducts() {
     if (viewCount === 4) {
       setExploreIndex((prevIndex) =>
         prevIndex === 0
-          ? Math.max(HomeData.productData.length - 4, 0)
+          ? Math.max(exploreourproducts.length - 4, 0)
           : prevIndex - 1
       );
     }
@@ -33,13 +43,13 @@ export default function ExploreOurProducts() {
   const handleNext = () => {
     if (viewCount === 4) {
       setExploreIndex((prevIndex) =>
-        prevIndex >= HomeData.productData.length - 4 ? 0 : prevIndex + 1
+        prevIndex >= exploreourproducts.length - 4 ? 0 : prevIndex + 1
       );
     }
   };
 
   const handleViewMore = () => {
-    setViewCount(HomeData.productData.length);
+    setViewCount(exploreourproducts.length);
   };
 
   const handleClose = () => {
@@ -66,16 +76,14 @@ export default function ExploreOurProducts() {
       )}
       <div className="slider-container">
         <div className="slider">
-          {HomeData.productData
-            .slice(
+          {exploreourproducts.slice(
               viewCount === 4 ? ExploreIndex : 0,
               viewCount === 4 ? ExploreIndex + 4 : viewCount
-            )
-            .map((item, index) => (
+            ).map((item, index) => (
               <div key={item.id} className="card explorecard">
                 {item.isNew && <span className="new">New</span>}
                 <img
-                  src={item.image}
+                  src={`/images/${item.image}` || ""}
                   alt={item.title}
                   onClick={() =>
                     navigate(`/product/${item.id}`, {
@@ -126,7 +134,7 @@ export default function ExploreOurProducts() {
               </div>
             ))}
         </div>
-        {viewCount < HomeData.productData.length ? (
+        {viewCount < exploreourproducts.length ? (
           <div className="view-all-products-container">
             <div className="ViewallProducts">
               <button onClick={handleViewMore}>View All Products</button>

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home';
@@ -11,9 +12,7 @@ import Login from './Components/Login';
 import ShoppingCart from './Components/ShoppingCart';
 import MyAccount from './Components/MyAccount';
 import Wishlist from './Components/Wishlist';
-
 import { CartProvider } from "react-use-cart";
-
 import WomenFashion from "./Components/Home/Women-Fashion";
 import MenFashion from './Components/Home/Men-Fashion';
 import Electronics from './Components/Home/Electronics';
@@ -26,8 +25,37 @@ import HealthBeauty from './Components/Home/Health-Beauty';
 import ProductDetails from './Components/Home/ProductDetails';
 import ProceedToCheckout from './Components/ProceedToCheckout';
 import BuyNow from './Components/buynow';
+import { TailSpin } from "react-loader-spinner";
+
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    // Simulate data fetching or API call
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the timeout duration as needed
+  
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+  }, []);
+  
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <TailSpin
+          visible={true}
+          height="200"
+          width="200"
+          color="#000"
+          ariaLabel="tail-spin-loading"
+          radius="1"
+          wrapperStyle={{}}
+          wrapperClass=""
+        />
+      </div>
+    );
+  }
   return (
     <Router>
       <CartProvider>

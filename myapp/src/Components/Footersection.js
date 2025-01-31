@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
-import googlePlayImage from "./images/GooglePlay.png";
-import qrCodeImage from "./images/Qr Code.png"; 
+import googlePlayImage from "./images/googleplay.png";
+import qrCodeImage from "./images/qr-code.png"; 
 import appStoreImage from "./images/download-appstore.png";
 
 function Footer() {

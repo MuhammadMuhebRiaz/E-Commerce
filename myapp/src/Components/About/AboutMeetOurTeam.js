@@ -1,71 +1,26 @@
-import React from 'react'
-import '../../App.css'
-
+import React, { useEffect, useState } from 'react';
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
-import img1 from "../images/About Emma.png"; 
-import img2 from "../images/About Will.png"; 
-import img3 from "../images/About Tom.png"; 
- 
-
 export default function AboutMeetOurTeam() {
-    
-const teamMembers = [
-    {
-    name: "Emma Watson",
-    role: "Managing Director",
-    image:img1,
-    twitterIcon: "fa-brands fa-twitter",
-    instagramIcon: "fa-brands fa-instagram",
-    linkedinIcon: "fa-brands fa-linkedin",
-    },
-    {
-    name: "Will Smith",
-    role: "Product Designer",
-    image: img2,
-    twitterIcon: "fa-brands fa-twitter",
-    instagramIcon: "fa-brands fa-instagram",
-    linkedinIcon: "fa-brands fa-linkedin",
-    },
-    {
-    name: "Tom Cruise",
-    role: "Founder & Chairman", 
-    image: img3,
-    twitterIcon: "fa-brands fa-twitter",
-    instagramIcon: "fa-brands fa-instagram",
-    linkedinIcon: "fa-brands fa-linkedin",
-    },
-    {
-    name: "Emma Watson",
-    role: "Managing Director",
-    image:img1,
-    twitterIcon: "fa-brands fa-twitter",
-    instagramIcon: "fa-brands fa-instagram",
-    linkedinIcon: "fa-brands fa-linkedin",
-    },
-    {
-    name: "Will Smith",
-    role: "Product Designer",
-    image: img2,
-    twitterIcon: "fa-brands fa-twitter",
-    instagramIcon: "fa-brands fa-instagram",
-    linkedinIcon: "fa-brands fa-linkedin",
-    },
-    {
-    name: "Tom Cruise",
-    role: "Founder & Chairman", 
-    image: img3,
-    twitterIcon: "fa-brands fa-twitter",
-    instagramIcon: "fa-brands fa-instagram",
-    linkedinIcon: "fa-brands fa-linkedin",
-    },
-];
-const TeamMember = ({ name, role, image, twitterIcon, instagramIcon, linkedinIcon }) => (
+  const [teamMembers, setTeamMembers] = useState([]);
+
+  // Fetch Team Members Data
+  useEffect(() => {
+    fetch("https://e-commerce-app-33918-default-rtdb.firebaseio.com/teammembers.json")
+    .then((response) =>{
+      response.json().then((result) => {
+        setTeamMembers(result);
+      })
+    }) 
+  }, []);
+
+  // TeamMember Component
+  const TeamMember = ({ name, role, image, twitterIcon, instagramIcon, linkedinIcon }) => (
     <div className="team-member">
-      <img src={image} alt={`${name}`} />
+      <img src={`/images/${image}`} alt={`${name}`} />
       <h3>{name}</h3>
       <p>{role}</p>
       <div className="social-icons">
@@ -75,32 +30,35 @@ const TeamMember = ({ name, role, image, twitterIcon, instagramIcon, linkedinIco
       </div>
     </div>
   );
+
   return (
-    <>
-        <div className="team-section">
-            <div className="team">
-                <h2>Meet Our Team</h2>
-                <Swiper modules={[Autoplay, Pagination]}
-                        spaceBetween={30}
-                        slidesPerView={3}
-                        loop={true}
-                        autoplay={{ delay: 2000, disableOnInteraction: false }}
-                        speed={800}
-                        pagination={{ clickable: true }}
-                        breakpoints={{
-                        640: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
-                        }} >
-                    {teamMembers.map((member, index) => (
-                    <SwiperSlide key={index}>
-                    <TeamMember {...member} />
-                    </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
-        </div>
-    </>
-    
-  )
+    <div className="team-section">
+      <div className="team">
+        <h2>Meet Our Team</h2>
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={30}
+          slidesPerView={3}
+          loop={teamMembers.length >= 3} // Loop تب ہی ہوگا جب slides کافی ہوں
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          speed={800}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {teamMembers.length > 0
+            ? [...teamMembers, ...teamMembers].map((member, index) => (
+                <SwiperSlide key={index}>
+                  <TeamMember {...member} />
+                </SwiperSlide>
+              ))
+            : <p>Loading...</p>}
+        </Swiper>
+
+      </div>
+    </div>
+  );
 }

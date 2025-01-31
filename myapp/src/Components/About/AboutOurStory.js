@@ -1,10 +1,9 @@
 import React from 'react';
-import '../../App.css';
-import img1 from "../images/About Side Image.png"; 
-import img2 from "../images/Services.png"; 
-import img3 from "../images/Monthly.png"; 
+import img1 from "../images/about-side-image.png"; 
+import img2 from "../images/services.png"; 
+import img3 from "../images/monthly.png";
 import img4 from "../images/customer.png"; 
-import img5 from "../images/Annual.png"; 
+import img5 from "../images/annual.png"; 
 
 export default function AboutOurStory() {
   return (

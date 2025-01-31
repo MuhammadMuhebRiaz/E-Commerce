@@ -1,0 +1,4777 @@
+{
+    "slides": [
+        {
+            "id": 1,
+            "image": "iphone-14.jpg",
+            "logo": "apple-logo.png",
+            "title": "iPhone 14 Series",
+            "discount": "10%",
+            "price": 376999,
+            "rating": 4,
+            "ratingPercentage": "90%",
+            "description": "Latest iPhone 14 with advanced features and sleek design.",
+            "category": "Smartphones",
+            "availability": "In Stock",
+            "stock": 50,
+            "sizes": [
+                "128GB",
+                "256GB",
+                "512GB"
+            ],
+            "colors": [
+                "Black",
+                "Silver",
+                "Blue"
+            ]
+        },
+        {
+            "id": 2,
+            "image": "iphone-14.jpg",
+            "logo": "apple-logo.png",
+            "title": "iPhone 14 Series",
+            "discount": "15%",
+            "price": 376999,
+            "rating": 4,
+            "ratingPercentage": "94%",
+            "description": "High-performance iPhone 14 with excellent camera and battery.",
+            "category": "Smartphones",
+            "availability": "In Stock",
+            "stock": 40,
+            "sizes": [
+                "128GB",
+                "256GB",
+                "512GB"
+            ],
+            "colors": [
+                "Black",
+                "Silver",
+                "Blue"
+            ]
+        },
+        {
+            "id": 3,
+            "image": "iphone-14.jpg",
+            "logo": "apple-logo.png",
+            "title": "iPhone 14 Series",
+            "discount": "20%",
+            "price": 376999,
+            "rating": 4,
+            "ratingPercentage": "96%",
+            "description": "The most popular iPhone 14 with premium build and design.",
+            "category": "Smartphones",
+            "availability": "In Stock",
+            "stock": 30,
+            "sizes": [
+                "128GB",
+                "256GB",
+                "512GB"
+            ],
+            "colors": [
+                "Black",
+                "Silver",
+                "Blue"
+            ]
+        },
+        {
+            "id": 4,
+            "image": "iphone-14.jpg",
+            "logo": "apple-logo.png",
+            "title": "iPhone 14 Series",
+            "discount": "25%",
+            "price": 376999,
+            "rating": 5,
+            "ratingPercentage": "98%",
+            "description": "Exclusive iPhone 14 with unmatched performance and features.",
+            "category": "Smartphones",
+            "availability": "In Stock",
+            "stock": 20,
+            "sizes": [
+                "128GB",
+                "256GB",
+                "512GB"
+            ],
+            "colors": [
+                "Black",
+                "Silver",
+                "Blue"
+            ]
+        },
+        {
+            "id": 5,
+            "image": "iphone-14.jpg",
+            "logo": "apple-logo.png",
+            "title": "iPhone 14 Series",
+            "discount": "30%",
+            "price": 376999,
+            "rating": 5,
+            "ratingPercentage": "100%",
+            "description": "Top-of-the-line iPhone 14 with all premium features included.",
+            "category": "Smartphones",
+            "availability": "In Stock",
+            "stock": 10,
+            "sizes": [
+                "128GB",
+                "256GB",
+                "512GB"
+            ],
+            "colors": [
+                "Black",
+                "Silver",
+                "Blue"
+            ]
+        }
+    ],
+    "exploreourproducts": [
+        {
+            "id": 1,
+            "image": "cesar.png",
+            "title": "Breed Dry Dog Food",
+            "price": "100",
+            "rating": 4,
+            "ratingPercentage": 35,
+            "description": "Premium dry dog food for healthy digestion and coat.",
+            "category": "Pet Supplies",
+            "brand": "Breed",
+            "availability": "In Stock",
+            "stock": 120,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Chicken",
+                "Beef",
+                "Lamb"
+            ]
+        },
+        {
+            "id": 2,
+            "image": "camera-hd.png",
+            "title": "CANON EOS DSLR Camera",
+            "price": "360",
+            "rating": 4,
+            "ratingPercentage": 95,
+            "description": "Professional DSLR camera for stunning photography.",
+            "category": "Cameras",
+            "brand": "Canon",
+            "availability": "In Stock",
+            "stock": 50,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "Silver"
+            ]
+        },
+        {
+            "id": 3,
+            "image": "laptop.png",
+            "title": "ASUS FHD Gaming Laptop",
+            "price": "700",
+            "rating": 5,
+            "ratingPercentage": 325,
+            "description": "High-performance laptop for seamless gaming experience.",
+            "category": "Laptops",
+            "brand": "Asus",
+            "availability": "In Stock",
+            "stock": 30,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "Grey"
+            ]
+        },
+        {
+            "id": 4,
+            "image": "curology-product-set.png",
+            "title": "Curology Product Set",
+            "price": "500",
+            "rating": 4,
+            "ratingPercentage": 145,
+            "description": "Complete skincare set to enhance skin health and appearance.",
+            "category": "Beauty",
+            "brand": "Curology",
+            "availability": "In Stock",
+            "stock": 200,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "LightBlue"
+            ]
+        },
+        {
+            "id": 5,
+            "image": "car.png",
+            "title": "Kids Electric Car",
+            "isNew": true,
+            "price": "960",
+            "rating": 5,
+            "ratingPercentage": 65,
+            "description": "Fun and safe electric car for kids with remote control.",
+            "category": "Toys",
+            "brand": "PowerKidz",
+            "availability": "In Stock",
+            "stock": 80,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Red",
+                "Blue",
+                "Pink"
+            ]
+        },
+        {
+            "id": 6,
+            "image": "shoes.png",
+            "title": "Jr. Zoom Soccer Cleats",
+            "price": "1160",
+            "rating": 5,
+            "ratingPercentage": 35,
+            "description": "Comfortable soccer cleats designed for young athletes.",
+            "category": "Sports",
+            "brand": "Zoom",
+            "availability": "In Stock",
+            "stock": 150,
+            "sizes": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "colors": [
+                "Black",
+                "LightBlue",
+                "Red"
+            ]
+        },
+        {
+            "id": 7,
+            "image": "gameing-console.png",
+            "title": "GP11 Shooter USB Gamepad",
+            "isNew": true,
+            "price": "660",
+            "rating": 4.5,
+            "ratingPercentage": 55,
+            "description": "USB gamepad for smooth gaming experience.",
+            "category": "Gaming",
+            "brand": "GP11",
+            "availability": "In Stock",
+            "stock": 100,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": 8,
+            "image": "quilted.png",
+            "title": "Quilted Satin Jacket",
+            "price": "660",
+            "rating": 4.5,
+            "ratingPercentage": 55,
+            "description": "Stylish and comfortable quilted satin jacket.",
+            "category": "Fashion",
+            "brand": "SatinStyle",
+            "availability": "In Stock",
+            "stock": 70,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "Navy Blue"
+            ]
+        }
+    ],
+    "flashsales": [
+        {
+            "id": 9,
+            "image": "havit-gamepad.png",
+            "title": "HAVIT HV-G92 Gamepad",
+            "discount": "40%",
+            "price": "120",
+            "originalPrice": "160",
+            "rating": 1,
+            "ratingPercentage": 88,
+            "description": "Affordable gamepad for casual gamers.",
+            "category": "Gaming",
+            "brand": "HAVIT",
+            "availability": "In Stock",
+            "stock": 150,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "Blue"
+            ]
+        },
+        {
+            "id": 10,
+            "image": "wired-keyboard.jpg",
+            "title": "AK-900 Wired Keyboard",
+            "discount": "35%",
+            "price": "960",
+            "originalPrice": "1160",
+            "rating": 3,
+            "ratingPercentage": 75,
+            "description": "Wired keyboard with responsive keys for better performance.",
+            "category": "Computer Accessories",
+            "brand": "AK",
+            "availability": "In Stock",
+            "stock": 120,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "LightBlue"
+            ]
+        },
+        {
+            "id": 11,
+            "image": "lcd-Gamingm_onitor.png",
+            "title": "IPS LCD Gaming Monitor",
+            "discount": "30%",
+            "price": "370",
+            "originalPrice": "400",
+            "rating": 3,
+            "ratingPercentage": 99,
+            "description": "Full HD IPS monitor for sharp visuals and color accuracy.",
+            "category": "Monitors",
+            "brand": "IPS",
+            "availability": "In Stock",
+            "stock": 80,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": 12,
+            "image": "comfort-chair.png",
+            "title": "S-Series Comfort Chair",
+            "discount": "25%",
+            "price": "375",
+            "originalPrice": "400",
+            "rating": 4,
+            "ratingPercentage": 90,
+            "description": "Ergonomically designed chair for maximum comfort.",
+            "category": "Furniture",
+            "brand": "S-Series",
+            "availability": "In Stock",
+            "stock": 60,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "Grey"
+            ]
+        },
+        {
+            "id": 13,
+            "image": "north-coat.png",
+            "title": "The North Coat",
+            "discount": "40%",
+            "price": "120",
+            "originalPrice": "160",
+            "rating": 5,
+            "ratingPercentage": 88,
+            "description": "Warm and stylish winter coat from The North Face.",
+            "category": "Clothing",
+            "brand": "North Face",
+            "availability": "In Stock",
+            "stock": 90,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "Green"
+            ]
+        },
+        {
+            "id": 14,
+            "image": "gucci-duffle-bag.png",
+            "title": "Gucci Duffle Bag",
+            "discount": "35%",
+            "price": "960",
+            "originalPrice": "1160",
+            "rating": 2,
+            "ratingPercentage": 75,
+            "description": "Luxury duffle bag with signature Gucci design.",
+            "category": "Accessories",
+            "brand": "Gucci",
+            "availability": "In Stock",
+            "stock": 110,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "Brown"
+            ]
+        },
+        {
+            "id": 15,
+            "image": "rgb-liquid.png",
+            "title": "RGB Liquid CPU Cooler",
+            "discount": "30%",
+            "price": "370",
+            "originalPrice": "400",
+            "rating": 3,
+            "ratingPercentage": 99,
+            "description": "High-performance CPU cooler with RGB lighting.",
+            "category": "Computer Accessories",
+            "brand": "RGB",
+            "availability": "In Stock",
+            "stock": 70,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Black",
+                "LightBlue"
+            ]
+        },
+        {
+            "id": 16,
+            "image": "small-bookshelf.png",
+            "title": "Small BookShelf",
+            "discount": "25%",
+            "price": "375",
+            "originalPrice": "400",
+            "rating": 4,
+            "ratingPercentage": 90,
+            "description": "Compact and stylish bookshelf for small spaces.",
+            "category": "Furniture",
+            "brand": "WoodCraft",
+            "availability": "In Stock",
+            "stock": 45,
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Brown",
+                "LightBlue"
+            ]
+        }
+    ],
+    "menfashion": [
+        {
+            "id": 1,
+            "title": "Men's Casual Shirt",
+            "price": 2599,
+            "image": "mens-casualshirt.jpg",
+            "category": "Shirts",
+            "description": "Casual shirt for everyday wear.",
+            "brand": "CasualWear",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "LightBlue",
+                "Red"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 4,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 2,
+            "title": "Men's Formal Shirt",
+            "price": 3099,
+            "image": "mens-formalshirt.jpg",
+            "category": "Shirts",
+            "description": "Elegant formal shirt for professional settings.",
+            "brand": "FormalFit",
+            "availability": "In Stock",
+            "colors": [
+                "blue",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 30,
+            "rating": 5,
+            "ratingPercentage": 95
+        },
+        {
+            "id": 3,
+            "title": "Men's Polo T-Shirt",
+            "price": 2049,
+            "image": "men-polo-t_Shirt.jpg",
+            "category": "T-Shirts",
+            "description": "Comfortable polo shirt for casual wear.",
+            "brand": "PoloFit",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 4,
+            "ratingPercentage": 89
+        },
+        {
+            "id": 4,
+            "title": "Men's Hooded Sweatshirt",
+            "price": 3599,
+            "image": "hooded-sweatshirt.png",
+            "category": "Sweatshirts",
+            "description": "Warm and cozy hooded sweatshirt for chilly days.",
+            "brand": "CozyWear",
+            "availability": "In Stock",
+            "colors": [
+                "Grey",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 15,
+            "rating": 4,
+            "ratingPercentage": 91
+        },
+        {
+            "id": 5,
+            "title": "Men's Slim-Fit Jeans",
+            "price": 4000,
+            "image": "slim_fit-jeans.png",
+            "category": "Jeans",
+            "description": "Stylish slim-fit jeans for modern looks.",
+            "brand": "FitWear",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 22,
+            "rating": 5,
+            "ratingPercentage": 93
+        },
+        {
+            "id": 6,
+            "title": "Men's Classic Trousers",
+            "price": 4550,
+            "image": "classictrousers.jpg",
+            "category": "Trousers",
+            "description": "Classic trousers for a formal appearance.",
+            "brand": "ClassicFit",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Navy Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "rating": 4,
+            "ratingPercentage": 87
+        },
+        {
+            "id": 7,
+            "title": "Men's Denim Jacket",
+            "price": 6099,
+            "image": "denimjacket.png",
+            "category": "Jackets",
+            "description": "Trendy denim jacket for casual outings.",
+            "brand": "DenimWorld",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 12,
+            "rating": 5,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 8,
+            "title": "Men's Leather Jacket",
+            "price": 1200,
+            "image": "menleatherhacket.png",
+            "category": "Jackets",
+            "description": "Classic leather jacket for a rugged look.",
+            "brand": "LeatherCraft",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 10,
+            "rating": 4,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 9,
+            "title": "Men's Running Shoes",
+            "price": 5000,
+            "image": "running-shoes.png",
+            "category": "Shoes",
+            "description": "Comfortable running shoes for active individuals.",
+            "brand": "RunFast",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 15,
+            "rating": 5,
+            "ratingPercentage": 97
+        },
+        {
+            "id": 10,
+            "title": "Men's Formal Shoes",
+            "price": 7099,
+            "image": "formalshoes.png",
+            "category": "Shoes",
+            "description": "Elegant formal shoes for professional wear.",
+            "brand": "FormalFit",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 5,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 11,
+            "title": "Men's Casual Sneakers",
+            "price": 4599,
+            "image": "casual-sneakers.png",
+            "category": "Shoes",
+            "description": "Stylish sneakers for everyday use.",
+            "brand": "SneakerStyle",
+            "availability": "In Stock",
+            "colors": [
+                "LightBlue",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 30,
+            "rating": 4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 12,
+            "title": "Men's Sports Watch",
+            "price": 1500,
+            "image": "sports-watch.png",
+            "category": "Accessories",
+            "description": "Sports watch for fitness enthusiasts.",
+            "brand": "SportWatch",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Red"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 4,
+            "ratingPercentage": 85
+        },
+        {
+            "id": 13,
+            "title": "Men's Aviator Sunglasses",
+            "price": 3599,
+            "image": "aviator-sunglasses.png",
+            "category": "Accessories",
+            "description": "Stylish aviator sunglasses for sunny days.",
+            "brand": "SunShade",
+            "availability": "In Stock",
+            "colors": [
+                "Silver",
+                "Gold"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 5,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 14,
+            "title": "Men's Beanie Hat",
+            "price": 1500,
+            "image": "beanie-hat.png",
+            "category": "Accessories",
+            "description": "Warm and cozy beanie hat for cold weather.",
+            "brand": "WinterWear",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "rating": 4,
+            "ratingPercentage": 89
+        },
+        {
+            "id": 15,
+            "title": "Men's Belt",
+            "price": 2000,
+            "image": "belt.png",
+            "category": "Accessories",
+            "description": "Durable belt to complement your outfit.",
+            "brand": "BeltMaster",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 5,
+            "ratingPercentage": 93
+        },
+        {
+            "id": 16,
+            "title": "Men's Winter Scarf",
+            "price": 2500,
+            "image": "winter-scarf.png",
+            "category": "Accessories",
+            "description": "Warm winter scarf for colder days.",
+            "brand": "ColdWeather",
+            "availability": "In Stock",
+            "colors": [
+                "Grey",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 15,
+            "rating": 4,
+            "ratingPercentage": 87
+        },
+        {
+            "id": 17,
+            "title": "Men's Gym Shorts",
+            "price": 1899,
+            "image": "gym-shorts.png",
+            "category": "Shorts",
+            "description": "Comfortable gym shorts for your workout.",
+            "brand": "GymFit",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 4,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 18,
+            "title": "Men's Chinos",
+            "price": 3599,
+            "image": "chinos.png",
+            "category": "Trousers",
+            "description": "Stylish chinos for smart-casual wear.",
+            "brand": "ChinoStyle",
+            "availability": "In Stock",
+            "colors": [
+                "Beige",
+                "Navy"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 22,
+            "rating": 5,
+            "ratingPercentage": 91
+        },
+        {
+            "id": 19,
+            "title": "Men's Windbreaker Jacket",
+            "price": 5599,
+            "image": "windbreaker-jacket.png",
+            "category": "Jackets",
+            "description": "Lightweight windbreaker jacket for outdoor activities.",
+            "brand": "OutdoorFit",
+            "availability": "In Stock",
+            "colors": [
+                "Grey",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "rating": 5,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 20,
+            "title": "Men's Loafers",
+            "price": 6599,
+            "image": "loafers.png",
+            "category": "Shoes",
+            "description": "Comfortable loafers for everyday wear.",
+            "brand": "LoaferPro",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 30,
+            "rating": 5,
+            "ratingPercentage": 93
+        }
+    ],
+    "bestsellingproducts": [
+        {
+            "id": 1,
+            "title": "The North Coat",
+            "price": 260,
+            "oldPrice": 360,
+            "rating": 5,
+            "reviews": 99,
+            "image": "north-coat.png",
+            "category": "Jackets",
+            "description": "Warm and stylish coat for winter wear.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "ratingPercentage": 98
+        },
+        {
+            "id": 2,
+            "title": "Gucci Duffle Bag",
+            "price": 960,
+            "oldPrice": 1160,
+            "rating": 4,
+            "reviews": 75,
+            "image": "gucci-duffle-bag.png",
+            "category": "Bags",
+            "description": "Luxury duffle bag by Gucci, perfect for travel.",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 3,
+            "title": "RGB Liquid CPU Cooler",
+            "price": 160,
+            "oldPrice": 170,
+            "rating": 3,
+            "reviews": 55,
+            "image": "rgb-liquid.png",
+            "category": "Computer Accessories",
+            "description": "High-performance liquid cooler with RGB lighting.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "ratingPercentage": 75
+        },
+        {
+            "id": 4,
+            "title": "Small BookShelf",
+            "price": 360,
+            "oldPrice": 10,
+            "rating": 2,
+            "reviews": 45,
+            "image": "small-bookshelf.png",
+            "category": "Furniture",
+            "description": "Compact bookshelf, ideal for small spaces.",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "White"
+            ],
+            "sizes": [
+                "Small"
+            ],
+            "stock": 15,
+            "ratingPercentage": 60
+        },
+        {
+            "id": 5,
+            "title": "The North Coat",
+            "price": 260,
+            "oldPrice": 360,
+            "rating": 5,
+            "reviews": 99,
+            "image": "north-coat.png",
+            "category": "Jackets",
+            "description": "Warm and stylish coat for winter wear.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "ratingPercentage": 98
+        },
+        {
+            "id": 6,
+            "title": "Gucci Duffle Bag",
+            "price": 960,
+            "oldPrice": 1160,
+            "rating": 4,
+            "reviews": 75,
+            "image": "gucci-duffle-bag.png",
+            "category": "Bags",
+            "description": "Luxury duffle bag by Gucci, perfect for travel.",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 7,
+            "title": "RGB Liquid CPU Cooler",
+            "price": 160,
+            "oldPrice": 170,
+            "rating": 3,
+            "reviews": 55,
+            "image": "rgb-liquid.png",
+            "category": "Computer Accessories",
+            "description": "High-performance liquid cooler with RGB lighting.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "ratingPercentage": 75
+        },
+        {
+            "id": 8,
+            "title": "Small BookShelf",
+            "price": 360,
+            "oldPrice": 10,
+            "rating": 2,
+            "reviews": 45,
+            "image": "small-bookshelf.png",
+            "category": "Furniture",
+            "description": "Compact bookshelf, ideal for small spaces.",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "White"
+            ],
+            "sizes": [
+                "Small"
+            ],
+            "stock": 15,
+            "ratingPercentage": 60
+        }
+    ],
+    "womenfashion": [
+        {
+            "id": 1,
+            "title": "Elegant Dress",
+            "price": 1200,
+            "image": "elegant-dress.jpg",
+            "category": "Dresses",
+            "description": "Beautiful and elegant dress for formal occasions.",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Blue",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ],
+            "stock": 30,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 2,
+            "title": "Summer Hat",
+            "price": 2500,
+            "image": "pngtree.png",
+            "category": "Accessories",
+            "description": "Lightweight summer hat for sunny days.",
+            "availability": "In Stock",
+            "colors": [
+                "Beige",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 4,
+            "ratingPercentage": 85
+        },
+        {
+            "id": 3,
+            "title": "Stylish Handbag",
+            "price": 3500,
+            "image": "stylish-handbag.jpg",
+            "category": "Bags",
+            "description": "Trendy handbag to complement any outfit.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 15,
+            "rating": 4.8,
+            "ratingPercentage": 95
+        },
+        {
+            "id": 4,
+            "title": "Comfortable Sandals",
+            "price": 4000,
+            "image": "comfortable-sandals.jpg",
+            "category": "Footwear",
+            "description": "Comfortable sandals for everyday wear.",
+            "availability": "In Stock",
+            "colors": [
+                "Tan",
+                "Black"
+            ],
+            "sizes": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "stock": 25,
+            "rating": 4.2,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 5,
+            "title": "Trendy Sunglasses",
+            "price": 1500,
+            "image": "trendy-sunglasses.jpg",
+            "category": "Accessories",
+            "description": "Fashionable sunglasses to protect your eyes.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Silver"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 40,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 6,
+            "title": "Classic Watch",
+            "price": 1800,
+            "image": "classic-watch.jpg",
+            "category": "Accessories",
+            "description": "Classic watch with an elegant design.",
+            "availability": "In Stock",
+            "colors": [
+                "Silver",
+                "Gold"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "rating": 4.6,
+            "ratingPercentage": 93
+        },
+        {
+            "id": 7,
+            "title": "Luxury Scarf",
+            "price": 7000,
+            "image": "luxury-scarf.jpg",
+            "category": "Accessories",
+            "description": "Luxurious scarf for a sophisticated look.",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 10,
+            "rating": 4.9,
+            "ratingPercentage": 97
+        },
+        {
+            "id": 8,
+            "title": "Evening Gown",
+            "price": 2500,
+            "image": "evening-gown.jpg",
+            "category": "Dresses",
+            "description": "Stunning evening gown for special occasions.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Navy Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ],
+            "stock": 12,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 9,
+            "title": "Elegant Earrings",
+            "price": 5000,
+            "image": "elegant-earrings.jpg",
+            "category": "Jewelry",
+            "description": "Elegant earrings with a timeless design.",
+            "availability": "In Stock",
+            "colors": [
+                "Gold",
+                "Silver"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 50,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 10,
+            "title": "Casual T-Shirt",
+            "price": 3000,
+            "image": "casual-tshirt.jpg",
+            "category": "T-Shirts",
+            "description": "Casual T-shirt for everyday wear.",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 35,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 11,
+            "title": "Skinny Jeans",
+            "price": 2000,
+            "image": "skinny-jeans.jpg",
+            "category": "Jeans",
+            "description": "Stylish skinny jeans for a modern look.",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 4.2,
+            "ratingPercentage": 84
+        },
+        {
+            "id": 12,
+            "title": "Cozy Sweater",
+            "price": 2500,
+            "image": "cozy-sweater.jpg",
+            "category": "Sweaters",
+            "description": "Warm and cozy sweater for cold weather.",
+            "availability": "In Stock",
+            "colors": [
+                "Grey",
+                "Black"
+            ],
+            "sizes": [
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 22,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 13,
+            "title": "Floral Skirt",
+            "price": 3000,
+            "image": "floral-skirt.jpg",
+            "category": "Skirts",
+            "description": "Elegant floral skirt for a stylish look.",
+            "availability": "In Stock",
+            "colors": [
+                "Pink",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ],
+            "stock": 15,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 14,
+            "title": "Leather Jacket",
+            "price": 4000,
+            "image": "leather-jacket.jpg",
+            "category": "Jackets",
+            "description": "Classic leather jacket for a bold statement.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Brown"
+            ],
+            "sizes": [
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 10,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 15,
+            "title": "Winter Boots",
+            "price": 3000,
+            "image": "winter-boots.jpg",
+            "category": "Footwear",
+            "description": "Durable and warm boots for winter.",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "Black"
+            ],
+            "sizes": [
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "stock": 12,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 16,
+            "title": "Gym Wear",
+            "price": 2000,
+            "image": "gym-wear.jpg",
+            "category": "Activewear",
+            "description": "Comfortable gym wear for your workouts.",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 17,
+            "title": "Sporty Shoes",
+            "price": 4000,
+            "image": "sporty-shoes.jpg",
+            "category": "Shoes",
+            "description": "Sporty shoes for active lifestyles.",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Blue"
+            ],
+            "sizes": [
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "stock": 18,
+            "rating": 4.5,
+            "ratingPercentage": 89
+        },
+        {
+            "id": 18,
+            "title": "Beachwear",
+            "price": 2500,
+            "image": "beachwear.jpg",
+            "category": "Swimwear",
+            "description": "Comfortable beachwear for summer days.",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Yellow"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ],
+            "stock": 20,
+            "rating": 4.2,
+            "ratingPercentage": 84
+        },
+        {
+            "id": 19,
+            "title": "Denim Jacket",
+            "price": 3000,
+            "image": "denim-jacket.jpg",
+            "category": "Jackets",
+            "description": "Trendy denim jacket for casual wear.",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Black"
+            ],
+            "sizes": [
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 15,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 20,
+            "title": "Party Dress",
+            "price": 4000,
+            "image": "party-dress.jpg",
+            "category": "Dresses",
+            "description": "Gorgeous party dress for special occasions.",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L"
+            ],
+            "stock": 10,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        }
+    ],
+    "newArrival": [
+        {
+            "id": 1,
+            "title": "PlayStation 5",
+            "description": "Black and White version of the PS5 coming out on sale.",
+            "image": "ps5-slim-goedkope.png",
+            "size": "large",
+            "category": "Gaming",
+            "price": 499,
+            "availability": "In Stock",
+            "stock": 50,
+            "rating": 4.9,
+            "ratingPercentage": 98,
+            "colors": [
+                "Black",
+                "White"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Women's Collections",
+            "description": "Featured women collections that give you another vibe.",
+            "image": "woman-wearing-hat.png",
+            "size": "small"
+        },
+        {
+            "id": 3,
+            "title": "Speakers",
+            "description": "Amazon wireless speakers",
+            "image": "speakers.png",
+            "size": "small",
+            "category": "Electronics",
+            "price": 89,
+            "availability": "In Stock",
+            "stock": 30,
+            "rating": 4.5,
+            "ratingPercentage": 90,
+            "colors": [
+                "Black",
+                "White"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Perfume",
+            "description": "GUCCI INTENSE OUD EDP",
+            "image": "perfume.png",
+            "size": "small",
+            "category": "Fragrances",
+            "price": 150,
+            "availability": "In Stock",
+            "stock": 20,
+            "rating": 4.8,
+            "ratingPercentage": 96,
+            "colors": [
+                "Gold"
+            ]
+        }
+    ],
+    "electronics": [
+        {
+            "id": 1,
+            "title": "Smartphone X200",
+            "price": 999,
+            "image": "smartphone.jpg",
+            "category": "Electronics",
+            "description": "Latest smartphone with advanced features.",
+            "brand": "TechBrand",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Blue"
+            ],
+            "sizes": [],
+            "stock": 50,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 2,
+            "title": "Wireless Earbuds",
+            "price": 199,
+            "image": "wireless-earbuds.png",
+            "category": "Electronics",
+            "description": "Noise-cancelling wireless earbuds.",
+            "brand": "SoundPro",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 100,
+            "rating": 4.3,
+            "ratingPercentage": 85
+        },
+        {
+            "id": 3,
+            "title": "4K Smart TV",
+            "price": 1200,
+            "image": "smarttv.jpg",
+            "category": "Electronics",
+            "description": "Ultra HD smart TV with streaming capabilities.",
+            "brand": "VisionTech",
+            "availability": "In Stock",
+            "colors": [
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 20,
+            "rating": 4.7,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 4,
+            "title": "Gaming Laptop Z15",
+            "price": 1500,
+            "image": "laptop.png",
+            "category": "Electronics",
+            "description": "High-performance gaming laptop with RGB keyboard.",
+            "brand": "GamePro",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Silver"
+            ],
+            "sizes": [],
+            "stock": 15,
+            "rating": 4.6,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 5,
+            "title": "Bluetooth Speaker",
+            "price": 99,
+            "image": "bluetooth-speaker.png",
+            "category": "Electronics",
+            "description": "Portable Bluetooth speaker with powerful sound.",
+            "brand": "SoundMax",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 80,
+            "rating": 4.4,
+            "ratingPercentage": 87
+        },
+        {
+            "id": 6,
+            "title": "Smartwatch Pro",
+            "price": 299,
+            "image": "smartwatch-pro.png",
+            "category": "Electronics",
+            "description": "Advanced smartwatch with fitness tracking.",
+            "brand": "WristTech",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Silver",
+                "Gold"
+            ],
+            "sizes": [],
+            "stock": 45,
+            "rating": 4.2,
+            "ratingPercentage": 83
+        },
+        {
+            "id": 7,
+            "title": "VR Headset",
+            "price": 499,
+            "image": "vr-headset.png",
+            "category": "Electronics",
+            "description": "Immersive VR headset for gaming and movies.",
+            "brand": "VirtualX",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 30,
+            "rating": 4.5,
+            "ratingPercentage": 89
+        },
+        {
+            "id": 8,
+            "title": "Drone Camera",
+            "price": 899,
+            "image": "drone-camera.png",
+            "category": "Electronics",
+            "description": "Professional drone camera with 4K resolution.",
+            "brand": "FlyCam",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [],
+            "stock": 25,
+            "rating": 4.8,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 9,
+            "title": "Wireless Charger",
+            "price": 49,
+            "image": "wireless-charger.png",
+            "category": "Electronics",
+            "description": "Fast wireless charger for smartphones.",
+            "brand": "ChargeHub",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "White"
+            ],
+            "sizes": [],
+            "stock": 120,
+            "rating": 4.1,
+            "ratingPercentage": 81
+        },
+        {
+            "id": 10,
+            "title": "Noise Headphones",
+            "price": 299,
+            "image": "noise-headphones.png",
+            "category": "Electronics",
+            "description": "Comfortable headphones with active noise cancellation.",
+            "brand": "AudioTech",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Silver"
+            ],
+            "sizes": [],
+            "stock": 40,
+            "rating": 4.6,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 11,
+            "title": "Smart Home Hub",
+            "price": 129,
+            "image": "smart-home-hub.png",
+            "category": "Electronics",
+            "description": "Control your smart home devices with ease.",
+            "brand": "HomeEase",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 60,
+            "rating": 4.3,
+            "ratingPercentage": 84
+        },
+        {
+            "id": 12,
+            "title": "Action Camera",
+            "price": 399,
+            "image": "action-camera.png",
+            "category": "Electronics",
+            "description": "Compact action camera with waterproof casing.",
+            "brand": "AdventureCam",
+            "availability": "In Stock",
+            "colors": [
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 35,
+            "rating": 4.7,
+            "ratingPercentage": 91
+        },
+        {
+            "id": 13,
+            "title": "Electric Scooter",
+            "price": 799,
+            "image": "electric-scooter.png",
+            "category": "Electronics",
+            "description": "Foldable electric scooter with long battery life.",
+            "brand": "EcoRide",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Red"
+            ],
+            "sizes": [],
+            "stock": 25,
+            "rating": 4.5,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 14,
+            "title": "Smart Thermostat",
+            "price": 149,
+            "image": "smart-thermostat.png",
+            "category": "Electronics",
+            "description": "Save energy with a smart thermostat.",
+            "brand": "ClimateControl",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [],
+            "stock": 50,
+            "rating": 4.4,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 15,
+            "title": "Gaming Console",
+            "price": 499,
+            "image": "gaming-console.png",
+            "category": "Electronics",
+            "description": "Next-gen gaming console with stunning graphics.",
+            "brand": "GameMaster",
+            "availability": "In Stock",
+            "colors": [
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 20,
+            "rating": 4.8,
+            "ratingPercentage": 93
+        },
+        {
+            "id": 16,
+            "title": "Portable Projector",
+            "price": 299,
+            "image": "portable-projector.png",
+            "category": "Electronics",
+            "description": "Compact projector for home or office use.",
+            "brand": "ProjectEase",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 30,
+            "rating": 4.3,
+            "ratingPercentage": 85
+        },
+        {
+            "id": 17,
+            "title": "Robot Vacuum Cleaner",
+            "price": 599,
+            "image": "robot-vacuum-cleaner.png",
+            "category": "Electronics",
+            "description": "Smart vacuum cleaner with mapping technology.",
+            "brand": "CleanBot",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "White"
+            ],
+            "sizes": [],
+            "stock": 40,
+            "rating": 4.7,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 18,
+            "title": "Fitness Tracker",
+            "price": 199,
+            "image": "fitness-tracker.png",
+            "category": "Electronics",
+            "description": "Track your fitness goals with precision.",
+            "brand": "FitTech",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Pink"
+            ],
+            "sizes": [],
+            "stock": 80,
+            "rating": 4.5,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 19,
+            "title": "Digital Camera",
+            "price": 899,
+            "image": "camera-hd.png",
+            "category": "Electronics",
+            "description": "Capture moments with high-quality photography.",
+            "brand": "PhotoPro",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Silver"
+            ],
+            "sizes": [],
+            "stock": 30,
+            "rating": 4.6,
+            "ratingPercentage": 89
+        },
+        {
+            "id": 20,
+            "title": "Streaming Device",
+            "price": 79,
+            "image": "streaming-device.png",
+            "category": "Electronics",
+            "description": "Stream your favorite content with ease.",
+            "brand": "StreamEase",
+            "availability": "In Stock",
+            "colors": [
+                "Black"
+            ],
+            "sizes": [],
+            "stock": 100,
+            "rating": 4.2,
+            "ratingPercentage": 84
+        }
+    ],
+    "homelifestyle": [
+        {
+            "id": 1,
+            "title": "Stylish Sofa Set",
+            "price": 45000,
+            "image": "stylish-sofa-set.jpg",
+            "category": "Furniture",
+            "description": "Comfortable and elegant sofa set for your living room.",
+            "brand": "HomeLux",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Blue",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 12,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 2,
+            "title": "Modern Coffee Table",
+            "price": 15000,
+            "image": "modern-coffee-table.jpg",
+            "category": "Furniture",
+            "description": "A sleek and modern coffee table with a glass top.",
+            "brand": "DecoArt",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "White"
+            ],
+            "sizes": [
+                "M",
+                "L"
+            ],
+            "stock": 8,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 3,
+            "title": "Luxury Bedsheet Set",
+            "price": 3000,
+            "image": "streaming-device.png",
+            "category": "Bedding",
+            "description": "Soft and durable bedsheet set with pillow covers.",
+            "brand": "SleepWell",
+            "availability": "In Stock",
+            "colors": [
+                "Pink",
+                "Beige",
+                "White"
+            ],
+            "sizes": [
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 4,
+            "title": "Dining Table Set",
+            "price": 65000,
+            "image": "streaming-device.png",
+            "category": "Furniture",
+            "description": "A stylish dining table set with six chairs.",
+            "brand": "DecoFurn",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "Black"
+            ],
+            "sizes": [
+                "L"
+            ],
+            "stock": 6,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 5,
+            "title": "Ceramic Vase",
+            "price": 1200,
+            "image": "streaming-device.png",
+            "category": "Decor",
+            "description": "A decorative ceramic vase for your home.",
+            "brand": "ArtisanDecor",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M"
+            ],
+            "stock": 20,
+            "rating": 4.1,
+            "ratingPercentage": 82
+        },
+        {
+            "id": 6,
+            "title": "Wall Clock",
+            "price": 2500,
+            "image": "streaming-device.png",
+            "category": "Decor",
+            "description": "A modern wall clock with a sleek design.",
+            "brand": "TimeMasters",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Silver"
+            ],
+            "sizes": [
+                "M"
+            ],
+            "stock": 15,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 7,
+            "title": "Floor Lamp",
+            "price": 7000,
+            "image": "streaming-device.png",
+            "category": "Lighting",
+            "description": "An elegant floor lamp for a cozy ambiance.",
+            "brand": "BrightLife",
+            "availability": "In Stock",
+            "colors": [
+                "Gold",
+                "Black"
+            ],
+            "sizes": [
+                "M",
+                "L"
+            ],
+            "stock": 10,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 8,
+            "title": "Curtain Set",
+            "price": 5000,
+            "image": "streaming-device.png",
+            "category": "Bedding",
+            "description": "High-quality curtains for your living space.",
+            "brand": "HomeStyle",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Beige"
+            ],
+            "sizes": [
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "rating": 4.2,
+            "ratingPercentage": 84
+        },
+        {
+            "id": 9,
+            "title": "Bookshelf",
+            "price": 12000,
+            "image": "streaming-device.png",
+            "category": "Furniture",
+            "description": "A spacious bookshelf for organizing your collection.",
+            "brand": "OrganizerPro",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "White"
+            ],
+            "sizes": [
+                "M",
+                "L"
+            ],
+            "stock": 7,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 10,
+            "title": "Kitchen Organizer",
+            "price": 3500,
+            "image": "streaming-device.png",
+            "category": "Kitchen",
+            "description": "A compact and durable kitchen organizer.",
+            "brand": "KitchenEase",
+            "availability": "In Stock",
+            "colors": [
+                "Silver",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M"
+            ],
+            "stock": 22,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 11,
+            "title": "Recliner Chair",
+            "price": 25000,
+            "image": "streaming-device.png",
+            "category": "Furniture",
+            "description": "A comfortable recliner chair with adjustable settings.",
+            "brand": "RelaxPro",
+            "availability": "In Stock",
+            "colors": [
+                "Grey",
+                "Black"
+            ],
+            "sizes": [
+                "L"
+            ],
+            "stock": 5,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 12,
+            "title": "LED Table Lamp",
+            "price": 2000,
+            "image": "streaming-device.png",
+            "category": "Lighting",
+            "description": "A sleek LED table lamp with adjustable brightness.",
+            "brand": "GlowSmart",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Black"
+            ],
+            "sizes": [
+                "M"
+            ],
+            "stock": 14,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 13,
+            "title": "Wardrobe Organizer",
+            "price": 8000,
+            "image": "streaming-device.png",
+            "category": "Storage",
+            "description": "An efficient wardrobe organizer for saving space.",
+            "brand": "StoreEase",
+            "availability": "In Stock",
+            "colors": [
+                "Grey",
+                "White"
+            ],
+            "sizes": [
+                "L",
+                "XL"
+            ],
+            "stock": 9,
+            "rating": 4.2,
+            "ratingPercentage": 84
+        },
+        {
+            "id": 14,
+            "title": "Rug Carpet",
+            "price": 6000,
+            "image": "streaming-device.png",
+            "category": "Decor",
+            "description": "A soft and stylish rug carpet for your floor.",
+            "brand": "ComfortZone",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Blue"
+            ],
+            "sizes": [
+                "M",
+                "L"
+            ],
+            "stock": 12,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 15,
+            "title": "Storage Box",
+            "price": 2000,
+            "image": "streaming-device.png",
+            "category": "Storage",
+            "description": "Durable storage box for organizing essentials.",
+            "brand": "StoreWell",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M"
+            ],
+            "stock": 16,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 16,
+            "title": "Portable Fan",
+            "price": 1500,
+            "image": "streaming-device.png",
+            "category": "Electronics",
+            "description": "A compact and portable fan for personal use.",
+            "brand": "CoolBreeze",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Black"
+            ],
+            "sizes": [
+                "S"
+            ],
+            "stock": 20,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 17,
+            "title": "Photo Frame Set",
+            "price": 2500,
+            "image": "streaming-device.png",
+            "category": "Decor",
+            "description": "A set of decorative photo frames for your memories.",
+            "brand": "FrameIt",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M"
+            ],
+            "stock": 25,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 18,
+            "title": "Blender Machine",
+            "price": 5000,
+            "image": "streaming-device.png",
+            "category": "Electronics",
+            "description": "A high-performance blender for kitchen use.",
+            "brand": "KitchenPro",
+            "availability": "In Stock",
+            "colors": [
+                "Silver",
+                "Black"
+            ],
+            "sizes": [
+                "M"
+            ],
+            "stock": 10,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 19,
+            "title": "Iron Stand",
+            "price": 3000,
+            "image": "streaming-device.png",
+            "category": "Furniture",
+            "description": "A durable and adjustable iron stand for convenience.",
+            "brand": "IronEase",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Grey"
+            ],
+            "sizes": [
+                "M",
+                "L"
+            ],
+            "stock": 7,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 20,
+            "title": "Laundry Basket",
+            "price": 1800,
+            "image": "streaming-device.png",
+            "category": "Storage",
+            "description": "A spacious laundry basket with durable material.",
+            "brand": "HomeCare",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "White"
+            ],
+            "sizes": [
+                "M",
+                "L"
+            ],
+            "stock": 15,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        }
+    ],
+    "medicine": [
+        {
+            "id": 1,
+            "title": "Paracetamol 500mg",
+            "price": 50,
+            "image": "streaming-device.png",
+            "category": "Pain Relief",
+            "description": "Effective for relieving fever and mild pain.",
+            "brand": "Panadol",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 100,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 2,
+            "title": "Ibuprofen 200mg",
+            "price": 70,
+            "image": "streaming-device.png",
+            "category": "Anti-inflammatory",
+            "description": "Relieves inflammation and pain effectively.",
+            "brand": "Brufen",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 120,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 3,
+            "title": "Cough Syrup 100ml",
+            "price": 150,
+            "image": "streaming-device.png",
+            "category": "Cough & Cold",
+            "description": "Soothes dry and wet cough.",
+            "brand": "Corex",
+            "availability": "In Stock",
+            "colors": [
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 50,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 4,
+            "title": "Vitamin C Tablets",
+            "price": 200,
+            "image": "streaming-device.png",
+            "category": "Vitamins",
+            "description": "Boosts immunity and promotes healthy skin.",
+            "brand": "C-Supreme",
+            "availability": "In Stock",
+            "colors": [
+                "Orange"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 80,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 5,
+            "title": "Antacid Tablets",
+            "price": 90,
+            "image": "streaming-device.png",
+            "category": "Digestion",
+            "description": "Provides quick relief from acidity and heartburn.",
+            "brand": "Rennie",
+            "availability": "In Stock",
+            "colors": [
+                "Pink"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 60,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 6,
+            "title": "Multivitamin Capsules",
+            "price": 300,
+            "image": "streaming-device.png",
+            "category": "Vitamins",
+            "description": "Supports overall health and wellness.",
+            "brand": "NutriMax",
+            "availability": "In Stock",
+            "colors": [
+                "Yellow"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 75,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 7,
+            "title": "Antihistamine 10mg",
+            "price": 120,
+            "image": "streaming-device.png",
+            "category": "Allergy Relief",
+            "description": "Relieves symptoms of allergies and hay fever.",
+            "brand": "Zyrtec",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 90,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 8,
+            "title": "Oral Rehydration Salts (ORS)",
+            "price": 50,
+            "image": "streaming-device.png",
+            "category": "Electrolyte Balance",
+            "description": "Replenishes fluids and electrolytes in dehydration.",
+            "brand": "Rehydro",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 200,
+            "rating": 4.9,
+            "ratingPercentage": 98
+        },
+        {
+            "id": 9,
+            "title": "Antibiotic 250mg",
+            "price": 400,
+            "image": "streaming-device.png",
+            "category": "Infection",
+            "description": "Effective for bacterial infections.",
+            "brand": "Amoxicare",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 40,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 10,
+            "title": "Pain Relief Gel 30g",
+            "price": 250,
+            "image": "streaming-device.png",
+            "category": "Topical Pain Relief",
+            "description": "Provides quick relief from joint and muscle pain.",
+            "brand": "Voltaren",
+            "availability": "In Stock",
+            "colors": [
+                "Transparent"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 30,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 11,
+            "title": "Iron Supplement 300mg",
+            "price": 180,
+            "image": "streaming-device.png",
+            "category": "Vitamins",
+            "description": "Prevents and treats iron deficiency anemia.",
+            "brand": "FeroPlus",
+            "availability": "In Stock",
+            "colors": [
+                "Red"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 70,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 12,
+            "title": "Calcium Tablets 500mg",
+            "price": 250,
+            "image": "streaming-device.png",
+            "category": "Vitamins",
+            "description": "Strengthens bones and teeth.",
+            "brand": "Calcicare",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 65,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 13,
+            "title": "Cold Relief Tablets",
+            "price": 100,
+            "image": "streaming-device.png",
+            "category": "Cough & Cold",
+            "description": "Relieves cold and nasal congestion.",
+            "brand": "ColdCare",
+            "availability": "In Stock",
+            "colors": [
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 110,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 14,
+            "title": "Antifungal Cream 20g",
+            "price": 300,
+            "image": "streaming-device.png",
+            "category": "Skin Care",
+            "description": "Treats fungal infections effectively.",
+            "brand": "Fungicare",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 45,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 15,
+            "title": "Liver Tonic 200ml",
+            "price": 500,
+            "image": "streaming-device.png",
+            "category": "Digestive Health",
+            "description": "Supports liver function and detoxification.",
+            "brand": "LivoCare",
+            "availability": "In Stock",
+            "colors": [
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 30,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 16,
+            "title": "Anti-Diarrheal Tablets",
+            "price": 80,
+            "image": "streaming-device.png",
+            "category": "Digestive Health",
+            "description": "Provides quick relief from diarrhea.",
+            "brand": "DiarStop",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 150,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 17,
+            "title": "Blood Pressure Monitor",
+            "price": 3500,
+            "image": "streaming-device.png",
+            "category": "Monitoring Devices",
+            "description": "Accurately monitors blood pressure.",
+            "brand": "BPTrack",
+            "availability": "In Stock",
+            "colors": [
+                "Grey"
+            ],
+            "sizes": [
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 4.9,
+            "ratingPercentage": 98
+        },
+        {
+            "id": 18,
+            "title": "Antiseptic Solution 100ml",
+            "price": 120,
+            "image": "streaming-device.png",
+            "category": "First Aid",
+            "description": "Prevents infection in cuts and wounds.",
+            "brand": "Dettol",
+            "availability": "In Stock",
+            "colors": [
+                "Clear"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 100,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 19,
+            "title": "Eye Drops 10ml",
+            "price": 200,
+            "image": "streaming-device.png",
+            "category": "Eye Care",
+            "description": "Relieves dryness and irritation in the eyes.",
+            "brand": "OptiFresh",
+            "availability": "In Stock",
+            "colors": [
+                "Clear"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 50,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 20,
+            "title": "Thermometer",
+            "price": 600,
+            "image": "streaming-device.png",
+            "category": "Monitoring Devices",
+            "description": "Digital thermometer for accurate temperature reading.",
+            "brand": "ThermoPro",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "M"
+            ],
+            "stock": 25,
+            "rating": 4.9,
+            "ratingPercentage": 98
+        }
+    ],
+    "sportsoutdoor": [
+        {
+            "id": 1,
+            "title": "Mountain Bike",
+            "price": 299.99,
+            "image": "streaming-device.png",
+            "category": "Cycling",
+            "description": "A durable mountain bike suitable for rough terrains.",
+            "brand": "TrailMaster",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 15,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 2,
+            "title": "Tennis Racket",
+            "price": 89.99,
+            "image": "streaming-device.png",
+            "category": "Tennis",
+            "description": "Lightweight and durable tennis racket for all skill levels.",
+            "brand": "ProServe",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 30,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 3,
+            "title": "Camping Tent",
+            "price": 149.99,
+            "image": "streaming-device.png",
+            "category": "Camping",
+            "description": "Spacious and waterproof tent for outdoor adventures.",
+            "brand": "OutdoorHub",
+            "availability": "In Stock",
+            "colors": [
+                "Green",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 4,
+            "title": "Yoga Mat",
+            "price": 29.99,
+            "image": "streaming-device.png",
+            "category": "Fitness",
+            "description": "Non-slip yoga mat with excellent cushioning.",
+            "brand": "ZenFlex",
+            "availability": "In Stock",
+            "colors": [
+                "Purple",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 50,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 5,
+            "title": "Hiking Backpack",
+            "price": 79.99,
+            "image": "streaming-device.png",
+            "category": "Hiking",
+            "description": "Ergonomic hiking backpack with multiple compartments.",
+            "brand": "AdventurePack",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 6,
+            "title": "Running Shoes",
+            "price": 119.99,
+            "image": "streaming-device.png",
+            "category": "Running",
+            "description": "Comfortable and lightweight running shoes.",
+            "brand": "Speedster",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Blue",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 40,
+            "rating": 4.9,
+            "ratingPercentage": 98
+        },
+        {
+            "id": 7,
+            "title": "Fishing Rod",
+            "price": 59.99,
+            "image": "streaming-device.png",
+            "category": "Fishing",
+            "description": "High-strength fishing rod for a great catch experience.",
+            "brand": "CatchPro",
+            "availability": "In Stock",
+            "colors": [
+                "Silver",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 8,
+            "title": "Basketball",
+            "price": 24.99,
+            "image": "streaming-device.png",
+            "category": "Basketball",
+            "description": "Official size basketball with excellent grip.",
+            "brand": "HoopMaster",
+            "availability": "In Stock",
+            "colors": [
+                "Orange"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 35,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 9,
+            "title": "Football",
+            "price": 19.99,
+            "image": "streaming-device.png",
+            "category": "Football",
+            "description": "Durable football suitable for all weather conditions.",
+            "brand": "PlayField",
+            "availability": "In Stock",
+            "colors": [
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 50,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 10,
+            "title": "Golf Clubs Set",
+            "price": 499.99,
+            "image": "streaming-device.png",
+            "category": "Golf",
+            "description": "Premium golf clubs set for professionals.",
+            "brand": "EliteSwing",
+            "availability": "In Stock",
+            "colors": [
+                "Silver"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 10,
+            "rating": 4.9,
+            "ratingPercentage": 98
+        },
+        {
+            "id": 11,
+            "title": "Skateboard",
+            "price": 79.99,
+            "image": "streaming-device.png",
+            "category": "Skating",
+            "description": "Durable skateboard with high-performance wheels.",
+            "brand": "SkatePro",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Red"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 22,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 12,
+            "title": "Punching Bag",
+            "price": 99.99,
+            "image": "streaming-device.png",
+            "category": "Boxing",
+            "description": "Heavy-duty punching bag for intense workouts.",
+            "brand": "PunchPro",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 15,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 13,
+            "title": "Water Bottle",
+            "price": 14.99,
+            "image": "streaming-device.png",
+            "category": "Accessories",
+            "description": "Insulated water bottle to keep your drinks cold.",
+            "brand": "HydroFlow",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Green",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 60,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 14,
+            "title": "Knee Pads",
+            "price": 34.99,
+            "image": "streaming-device.png",
+            "category": "Protective Gear",
+            "description": "Comfortable knee pads for sports and outdoor activities.",
+            "brand": "SafeMove",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Grey"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 15,
+            "title": "Dumbbells Set",
+            "price": 199.99,
+            "image": "streaming-device.png",
+            "category": "Fitness",
+            "description": "Adjustable dumbbells for strength training.",
+            "brand": "FitStrong",
+            "availability": "In Stock",
+            "colors": [
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 20,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 16,
+            "title": "Climbing Rope",
+            "price": 59.99,
+            "image": "streaming-device.png",
+            "category": "Climbing",
+            "description": "Strong and durable rope for climbing activities.",
+            "brand": "ClimbSafe",
+            "availability": "In Stock",
+            "colors": [
+                "Yellow",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 12,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 17,
+            "title": "Helmet",
+            "price": 49.99,
+            "image": "streaming-device.png",
+            "category": "Cycling",
+            "description": "Lightweight and protective cycling helmet.",
+            "brand": "RideSafe",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Black",
+                "Red"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 35,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 18,
+            "title": "Camping Chair",
+            "price": 39.99,
+            "image": "streaming-device.png",
+            "category": "Camping",
+            "description": "Foldable camping chair with cup holder.",
+            "brand": "CampEase",
+            "availability": "In Stock",
+            "colors": [
+                "Green",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 30,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 19,
+            "title": "Ski Goggles",
+            "price": 89.99,
+            "image": "streaming-device.png",
+            "category": "Skiing",
+            "description": "Anti-fog and UV-protected ski goggles.",
+            "brand": "SnowVision",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Black",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 18,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 20,
+            "title": "Trail Shoes",
+            "price": 129.99,
+            "image": "streaming-device.png",
+            "category": "Hiking",
+            "description": "Waterproof and rugged trail shoes for all terrains.",
+            "brand": "TrekStep",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 22,
+            "rating": 4.9,
+            "ratingPercentage": 98
+        }
+    ],
+    "babystoys": [
+        {
+            "id": 1,
+            "title": "Plush Teddy Bear",
+            "price": 15.99,
+            "image": "streaming-device.png",
+            "category": "Baby Toys",
+            "description": "Soft and cuddly teddy bear for babies.",
+            "brand": "BabySoft",
+            "availability": "In Stock",
+            "colors": [
+                "Brown",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 120,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 2,
+            "title": "Building Blocks Set",
+            "price": 25.99,
+            "image": "streaming-device.png",
+            "category": "Educational Toys",
+            "description": "Colorful building blocks to enhance creativity.",
+            "brand": "EduPlay",
+            "availability": "In Stock",
+            "colors": [
+                "Multicolor"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 85,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 3,
+            "title": "Musical Rattle",
+            "price": 9.99,
+            "image": "streaming-device.png",
+            "category": "Baby Toys",
+            "description": "Interactive musical rattle for infants.",
+            "brand": "SoundJoy",
+            "availability": "In Stock",
+            "colors": [
+                "Yellow",
+                "Pink"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 150,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 4,
+            "title": "Stuffed Elephant",
+            "price": 19.99,
+            "image": "streaming-device.png",
+            "category": "Baby Toys",
+            "description": "Adorable stuffed elephant for cuddling.",
+            "brand": "CuddleZoo",
+            "availability": "In Stock",
+            "colors": [
+                "Gray",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 100,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 5,
+            "title": "Wooden Puzzle",
+            "price": 14.99,
+            "image": "streaming-device.png",
+            "category": "Educational Toys",
+            "description": "Challenging wooden puzzle for toddlers.",
+            "brand": "SmartKids",
+            "availability": "In Stock",
+            "colors": [
+                "Natural Wood"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 70,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 6,
+            "title": "Baby Walker",
+            "price": 49.99,
+            "image": "streaming-device.png",
+            "category": "Baby Gear",
+            "description": "Sturdy baby walker with fun activities.",
+            "brand": "FirstSteps",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Green"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 40,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 7,
+            "title": "Crib Mobile",
+            "price": 29.99,
+            "image": "streaming-device.png",
+            "category": "Baby Gear",
+            "description": "Colorful crib mobile with soothing music.",
+            "brand": "SleepyTime",
+            "availability": "In Stock",
+            "colors": [
+                "Multicolor"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 55,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 8,
+            "title": "Bath Toys Set",
+            "price": 12.99,
+            "image": "streaming-device.png",
+            "category": "Baby Toys",
+            "description": "Set of fun bath toys for water play.",
+            "brand": "SplashFun",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Orange"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 110,
+            "rating": 4.2,
+            "ratingPercentage": 84
+        },
+        {
+            "id": 9,
+            "title": "Activity Play Mat",
+            "price": 39.99,
+            "image": "streaming-device.png",
+            "category": "Baby Gear",
+            "description": "Interactive play mat with toys and music.",
+            "brand": "PlayTime",
+            "availability": "In Stock",
+            "colors": [
+                "Multicolor"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 60,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 10,
+            "title": "Stacking Rings",
+            "price": 8.99,
+            "image": "streaming-device.png",
+            "category": "Educational Toys",
+            "description": "Classic stacking rings for motor skills development.",
+            "brand": "StackIt",
+            "availability": "In Stock",
+            "colors": [
+                "Multicolor"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 95,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 11,
+            "title": "Play Kitchen Set",
+            "price": 34.99,
+            "image": "streaming-device.png",
+            "category": "Role Play Toys",
+            "description": "Miniature kitchen set for imaginative play.",
+            "brand": "LittleChef",
+            "availability": "In Stock",
+            "colors": [
+                "Pink",
+                "Yellow"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 45,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 12,
+            "title": "Toy Car Set",
+            "price": 22.99,
+            "image": "streaming-device.png",
+            "category": "Vehicles",
+            "description": "Set of 5 colorful toy cars.",
+            "brand": "SpeedyWheels",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Blue",
+                "Green"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 130,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 13,
+            "title": "Alphabet Learning Board",
+            "price": 18.99,
+            "image": "streaming-device.png",
+            "category": "Educational Toys",
+            "description": "Wooden board for learning alphabets.",
+            "brand": "LearnWell",
+            "availability": "In Stock",
+            "colors": [
+                "Natural Wood"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 75,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 14,
+            "title": "Doll House",
+            "price": 59.99,
+            "image": "streaming-device.png",
+            "category": "Role Play Toys",
+            "description": "Beautiful doll house with furniture.",
+            "brand": "DreamHome",
+            "availability": "In Stock",
+            "colors": [
+                "Pink",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 15,
+            "title": "Stuffed Giraffe",
+            "price": 17.99,
+            "image": "streaming-device.png",
+            "category": "Baby Toys",
+            "description": "Soft and huggable stuffed giraffe.",
+            "brand": "HugMe",
+            "availability": "In Stock",
+            "colors": [
+                "Yellow",
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 90,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 16,
+            "title": "Baby Swing",
+            "price": 79.99,
+            "image": "streaming-device.png",
+            "category": "Baby Gear",
+            "description": "Comfortable swing for babies with safety straps.",
+            "brand": "SafePlay",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "Gray"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 15,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 17,
+            "title": "Pull Along Toy",
+            "price": 12.49,
+            "image": "streaming-device.png",
+            "category": "Baby Toys",
+            "description": "Colorful pull-along toy with wheels.",
+            "brand": "WalkMate",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Yellow"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 100,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 18,
+            "title": "Baby Doll",
+            "price": 24.99,
+            "image": "streaming-device.png",
+            "category": "Role Play Toys",
+            "description": "Cute baby doll with accessories.",
+            "brand": "SweetDreams",
+            "availability": "In Stock",
+            "colors": [
+                "Pink"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 50,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 19,
+            "title": "Toy Train Set",
+            "price": 45.99,
+            "image": "streaming-device.png",
+            "category": "Vehicles",
+            "description": "Classic toy train set with tracks.",
+            "brand": "TrackMasters",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Red"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 35,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 20,
+            "title": "Shape Sorter Cube",
+            "price": 16.99,
+            "image": "streaming-device.png",
+            "category": "Educational Toys",
+            "description": "Fun shape sorter to develop problem-solving skills.",
+            "brand": "ShapeFun",
+            "availability": "In Stock",
+            "colors": [
+                "Multicolor"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 65,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        }
+    ],
+    "groceriespets": [
+        {
+            "id": 1,
+            "title": "Organic Apples",
+            "price": 3.99,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Fresh organic apples, perfect for snacking.",
+            "brand": "Nature's Best",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Green"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 150,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 2,
+            "title": "Grain-Free Dog Food",
+            "price": 24.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "High-quality grain-free dog food for all breeds.",
+            "brand": "HealthyPaws",
+            "availability": "In Stock",
+            "colors": [
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 85,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 3,
+            "title": "Organic Carrots",
+            "price": 1.99,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Fresh organic carrots, great for cooking and snacking.",
+            "brand": "FarmFresh",
+            "availability": "In Stock",
+            "colors": [
+                "Orange"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 200,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 4,
+            "title": "Cat Litter",
+            "price": 12.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Premium clumping cat litter for easy cleaning.",
+            "brand": "CleanPaws",
+            "availability": "In Stock",
+            "colors": [
+                "Gray"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 120,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 5,
+            "title": "Whole Grain Bread",
+            "price": 2.49,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Healthy whole grain bread, perfect for sandwiches.",
+            "brand": "Baker's Choice",
+            "availability": "In Stock",
+            "colors": [
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 100,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 6,
+            "title": "Fish Food",
+            "price": 9.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Nutrient-rich food for all types of fish.",
+            "brand": "AquaLife",
+            "availability": "In Stock",
+            "colors": [
+                "Multicolor"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 60,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 7,
+            "title": "Free-Range Eggs",
+            "price": 4.49,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Fresh free-range eggs, rich in nutrients.",
+            "brand": "EggFarm",
+            "availability": "In Stock",
+            "colors": [
+                "White",
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 140,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 8,
+            "title": "Dog Chew Toy",
+            "price": 7.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Durable chew toy to keep your dog entertained.",
+            "brand": "PlayPaws",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 75,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 9,
+            "title": "Fresh Milk",
+            "price": 3.29,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Fresh whole milk from grass-fed cows.",
+            "brand": "DairyPure",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 180,
+            "rating": 4.9,
+            "ratingPercentage": 98
+        },
+        {
+            "id": 10,
+            "title": "Bird Feeder",
+            "price": 15.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Attractive bird feeder for your garden.",
+            "brand": "NatureNest",
+            "availability": "In Stock",
+            "colors": [
+                "Green",
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 50,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 11,
+            "title": "Organic Bananas",
+            "price": 1.29,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Fresh organic bananas, perfect for a healthy snack.",
+            "brand": "TropicalDelight",
+            "availability": "In Stock",
+            "colors": [
+                "Yellow"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 250,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 12,
+            "title": "Cat Scratching Post",
+            "price": 29.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Durable scratching post for cats to stay active.",
+            "brand": "PurrPlay",
+            "availability": "In Stock",
+            "colors": [
+                "Gray",
+                "Beige"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 40,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 13,
+            "title": "Whole Wheat Pasta",
+            "price": 2.99,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Healthy whole wheat pasta, great for meals.",
+            "brand": "PastaPerfect",
+            "availability": "In Stock",
+            "colors": [
+                "Beige"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 120,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 14,
+            "title": "Pet Shampoo",
+            "price": 10.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Gentle pet shampoo for a shiny coat.",
+            "brand": "FreshFur",
+            "availability": "In Stock",
+            "colors": [
+                "Clear"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 65,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 15,
+            "title": "Organic Spinach",
+            "price": 3.49,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Fresh organic spinach, rich in vitamins.",
+            "brand": "GreenLeaf",
+            "availability": "In Stock",
+            "colors": [
+                "Green"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 130,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 16,
+            "title": "Dog Leash",
+            "price": 14.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Durable leash for your dog, available in multiple sizes.",
+            "brand": "WalkBuddy",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 75,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 17,
+            "title": "Fresh Chicken Breast",
+            "price": 6.99,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Fresh, hormone-free chicken breast.",
+            "brand": "FarmFresh",
+            "availability": "In Stock",
+            "colors": [
+                "Pink"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 100,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 18,
+            "title": "Catnip Toy",
+            "price": 5.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Fun toy filled with natural catnip.",
+            "brand": "KittyFun",
+            "availability": "In Stock",
+            "colors": [
+                "Green",
+                "Yellow"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 80,
+            "rating": 4.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 19,
+            "title": "Organic Potatoes",
+            "price": 2.99,
+            "image": "streaming-device.png",
+            "category": "Groceries",
+            "description": "Fresh organic potatoes, perfect for cooking.",
+            "brand": "HarvestTime",
+            "availability": "In Stock",
+            "colors": [
+                "Brown"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 220,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 20,
+            "title": "Pet Bed",
+            "price": 39.99,
+            "image": "streaming-device.png",
+            "category": "Pets",
+            "description": "Comfortable bed for your pet to relax.",
+            "brand": "CozyNest",
+            "availability": "In Stock",
+            "colors": [
+                "Gray",
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 45,
+            "rating": 4,
+            "ratingPercentage": 96
+        }
+    ],
+    "health-beauty": [
+        {
+            "id": 1,
+            "title": "Herbal Face Wash",
+            "price": 8.99,
+            "image": "streaming-device.png",
+            "category": "Skincare",
+            "description": "Gentle herbal face wash for all skin types.",
+            "brand": "NatureGlow",
+            "availability": "In Stock",
+            "colors": [
+                "Green",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 120,
+            "rating": 4,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 2,
+            "title": "Aloe Vera Gel",
+            "price": 12.99,
+            "image": "streaming-device.png",
+            "category": "Skincare",
+            "description": "Pure aloe vera gel for soothing skin.",
+            "brand": "SkinSoothe",
+            "availability": "In Stock",
+            "colors": [
+                "Clear"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 150,
+            "rating": 4,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 3,
+            "title": "Vitamin C Serum",
+            "price": 19.99,
+            "image": "streaming-device.png",
+            "category": "Skincare",
+            "description": "Brightening serum with vitamin C.",
+            "brand": "GlowBright",
+            "availability": "In Stock",
+            "colors": [
+                "Orange",
+                "Clear"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 100,
+            "rating": 4,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 4,
+            "title": "Hair Growth Oil",
+            "price": 14.99,
+            "image": "streaming-device.png",
+            "category": "Hair Care",
+            "description": "Nourishing oil for hair growth.",
+            "brand": "HealthyLocks",
+            "availability": "In Stock",
+            "colors": [
+                "Yellow"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 80,
+            "rating": 5,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 5,
+            "title": "Organic Lip Balm",
+            "price": 5.49,
+            "image": "streaming-device.png",
+            "category": "Lip Care",
+            "description": "Moisturizing lip balm with organic ingredients.",
+            "brand": "LipLush",
+            "availability": "In Stock",
+            "colors": [
+                "Pink",
+                "Natural"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 200,
+            "rating": 3.4,
+            "ratingPercentage": 88
+        },
+        {
+            "id": 6,
+            "title": "Charcoal Face Mask",
+            "price": 10.99,
+            "image": "streaming-device.png",
+            "category": "Skincare",
+            "description": "Deep cleansing charcoal mask for oily skin.",
+            "brand": "PureCare",
+            "availability": "In Stock",
+            "colors": [
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 90,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 7,
+            "title": "Sunscreen SPF 50",
+            "price": 16.99,
+            "image": "streaming-device.png",
+            "category": "Skincare",
+            "description": "Water-resistant sunscreen with SPF 50.",
+            "brand": "SunShield",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 75,
+            "rating": 2.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 8,
+            "title": "Anti-Dandruff Shampoo",
+            "price": 11.49,
+            "image": "streaming-device.png",
+            "category": "Hair Care",
+            "description": "Effective shampoo for dandruff control.",
+            "brand": "CleanScalp",
+            "availability": "In Stock",
+            "colors": [
+                "Blue"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 60,
+            "rating": 4.3,
+            "ratingPercentage": 86
+        },
+        {
+            "id": 9,
+            "title": "Herbal Shampoo",
+            "price": 9.99,
+            "image": "streaming-device.png",
+            "category": "Hair Care",
+            "description": "Herbal shampoo for strong and shiny hair.",
+            "brand": "NatureHair",
+            "availability": "In Stock",
+            "colors": [
+                "Green"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 110,
+            "rating": 4.6,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 10,
+            "title": "Eye Cream",
+            "price": 24.99,
+            "image": "streaming-device.png",
+            "category": "Skincare",
+            "description": "Anti-aging eye cream for dark circles.",
+            "brand": "BrightEyes",
+            "availability": "In Stock",
+            "colors": [
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 50,
+            "rating": 4.8,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 11,
+            "title": "Night Repair Cream",
+            "price": 27.99,
+            "image": "streaming-device.png",
+            "category": "Skincare",
+            "description": "Regenerating night cream for radiant skin.",
+            "brand": "GlowNite",
+            "availability": "In Stock",
+            "colors": [
+                "Cream"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 40,
+            "rating": 4.7,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 12,
+            "title": "Beard Oil",
+            "price": 15.99,
+            "image": "streaming-device.png",
+            "category": "Grooming",
+            "description": "Conditioning oil for beard growth.",
+            "brand": "ManCare",
+            "availability": "In Stock",
+            "colors": [
+                "Yellow"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 90,
+            "rating": 4,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 13,
+            "title": "Nail Polish Set",
+            "price": 18.49,
+            "image": "streaming-device.png",
+            "category": "Cosmetics",
+            "description": "Set of 6 vibrant nail polishes.",
+            "brand": "ColorCraze",
+            "availability": "In Stock",
+            "colors": [
+                "Red",
+                "Blue",
+                "Pink"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 120,
+            "rating": 2.5,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 14,
+            "title": "Makeup Brush Set",
+            "price": 25.99,
+            "image": "streaming-device.png",
+            "category": "Cosmetics",
+            "description": "Professional makeup brush set.",
+            "brand": "BrushArt",
+            "availability": "In Stock",
+            "colors": [
+                "Black",
+                "Gold"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 80,
+            "rating": 3.5,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 15,
+            "title": "Perfume for Women",
+            "price": 49.99,
+            "image": "streaming-device.png",
+            "category": "Fragrance",
+            "description": "Long-lasting floral fragrance.",
+            "brand": "Elegance",
+            "availability": "In Stock",
+            "colors": [
+                "Pink"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 35,
+            "rating": 2,
+            "ratingPercentage": 98
+        },
+        {
+            "id": 16,
+            "title": "Perfume for Men",
+            "price": 59.99,
+            "image": "streaming-device.png",
+            "category": "Fragrance",
+            "description": "Spicy and woody fragrance for men.",
+            "brand": "BoldScent",
+            "availability": "In Stock",
+            "colors": [
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 25,
+            "rating": 3,
+            "ratingPercentage": 96
+        },
+        {
+            "id": 17,
+            "title": "Hair Straightener",
+            "price": 39.99,
+            "image": "streaming-device.png",
+            "category": "Hair Care",
+            "description": "Professional ceramic hair straightener.",
+            "brand": "StylePro",
+            "availability": "In Stock",
+            "colors": [
+                "Pink",
+                "Black"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 70,
+            "rating": 4.5,
+            "ratingPercentage": 90
+        },
+        {
+            "id": 18,
+            "title": "Electric Toothbrush",
+            "price": 34.99,
+            "image": "streaming-device.png",
+            "category": "Oral Care",
+            "description": "Rechargeable electric toothbrush.",
+            "brand": "SmilePro",
+            "availability": "In Stock",
+            "colors": [
+                "Blue",
+                "White"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 45,
+            "rating": 4,
+            "ratingPercentage": 94
+        },
+        {
+            "id": 19,
+            "title": "Body Lotion",
+            "price": 14.49,
+            "image": "streaming-device.png",
+            "category": "Body Care",
+            "description": "Moisturizing body lotion for soft skin.",
+            "brand": "SoftTouch",
+            "availability": "In Stock",
+            "colors": [
+                "Cream"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 110,
+            "rating": 4,
+            "ratingPercentage": 92
+        },
+        {
+            "id": 20,
+            "title": "Bath Bomb Set",
+            "price": 21.99,
+            "image": "streaming-device.png",
+            "category": "Body Care",
+            "description": "Relaxing bath bombs with essential oils.",
+            "brand": "AromaBliss",
+            "availability": "In Stock",
+            "colors": [
+                "Multicolor"
+            ],
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 65,
+            "rating": 4,
+            "ratingPercentage": 96
+        }
+    ],
+    "musicpromocard" : [
+        {
+            "id": 1,
+            "title": "Speaker",
+            "price": 2100.99,
+            "image": "speaker.png",
+            "description": "This portable Bluetooth speaker delivers powerful sound, long battery life, and seamless connectivity, making it perfect for music and calls on the go.",
+            "availability": "In Stock",
+            "colors": ["Black"],
+            "sizes": ["S","M","L","XL" ],
+            "stock": 65,
+            "rating": 4,
+            "ratingPercentage": 96
+        }
+    ],
+    "teammembers" : [
+        {
+          "name": "Emma Watson",
+          "role": "Managing Director",
+          "image": "about-emma.png",
+          "twitterIcon": "fa-brands fa-twitter",
+          "instagramIcon": "fa-brands fa-instagram",
+          "linkedinIcon": "fa-brands fa-linkedin"
+        },
+        {
+          "name": "Will Smith",
+          "role": "Product Designer",
+          "image": "about-will.png",
+          "twitterIcon": "fa-brands fa-twitter",
+          "instagramIcon": "fa-brands fa-instagram",
+          "linkedinIcon": "fa-brands fa-linkedin"
+        },
+        {
+          "name": "Tom Cruise",
+          "role": "Founder & Chairman",
+          "image": "about-tom.png",
+          "twitterIcon": "fa-brands fa-twitter",
+          "instagramIcon": "fa-brands fa-instagram",
+          "linkedinIcon": "fa-brands fa-linkedin"
+        },
+        {
+          "name": "Emma Watson",
+          "role": "Managing Director",
+          "image": "about-emma.png",
+          "twitterIcon": "fa-brands fa-twitter",
+          "instagramIcon": "fa-brands fa-instagram",
+          "linkedinIcon": "fa-brands fa-linkedin"
+        },
+        {
+          "name": "Will Smith",
+          "role": "Product Designer",
+          "image": "about-will.png",
+          "twitterIcon": "fa-brands fa-twitter",
+          "instagramIcon": "fa-brands fa-instagram",
+          "linkedinIcon": "fa-brands fa-linkedin"
+        },
+        {
+          "name": "Tom Cruise",
+          "role": "Founder & Chairman",
+          "image": "about-tom.png",
+          "twitterIcon": "fa-brands fa-twitter",
+          "instagramIcon": "fa-brands fa-instagram",
+          "linkedinIcon": "fa-brands fa-linkedin"
+        }
+      ],
+      "features": [
+        {
+          "id": 1,
+          "title": "Free and Fast Delivery",
+          "description": "Free delivery for all orders over $140",
+          "image": "fastdelivery.png"
+        },
+        {
+          "id": 2,
+          "title": "24/7 Customer Service",
+          "description": "Friendly 24/7 customer support",
+          "image": "support.png"
+        },
+        {
+            "id": 3,
+            "title": "Money Back Guarantee",
+            "description": "We return money within 30 days",
+            "image": "money.png"
+        }
+      ]
+}

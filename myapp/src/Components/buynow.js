@@ -39,7 +39,7 @@ export default function BuyNow() {
           <ul>
             <li className="order-item">
               <span className="orderitemimg">
-                <img src={product.image} alt={product.title} />
+                <img src={`/images/${product.image}` || ""} alt={product.title} />
               </span>
               <span className="orderitemtitle">{product.title}</span>
               <span className="orderitemprice">

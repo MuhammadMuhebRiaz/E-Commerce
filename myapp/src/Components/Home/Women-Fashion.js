@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../App.css';
 import { useCart } from "react-use-cart";
 import Sidebar from "./Sidebar" ;
 import { Route, Routes } from "react-router-dom";
-import HomeData from "./HomeData";
 import { useNavigate } from "react-router-dom";
-import { color } from 'framer-motion';
-export default function HealthBeauty() {
+export default function WomenFashion() {
   const { addItem } = useCart();
   const navigate = useNavigate();
-
+  const [womenfashion, setWomenfashion] = useState([]);
+  
+  useEffect(()=>{
+          fetch("https://e-commerce-app-33918-default-rtdb.firebaseio.com/womenfashion.json")
+          .then((response) =>{
+            response.json().then((result) => {
+              setWomenfashion(result);
+            })
+          })
+        });
 
   const renderStars = (rating) => {
     const totalStars = 5;
@@ -30,11 +37,14 @@ export default function HealthBeauty() {
               <Route path="*" element={<Sidebar/>} />
       </Routes>
         <div className="home-sidber-container">
-          <h1>Health & Beauty</h1>
+          <h1>Women & Fashion</h1>
           <div className="product-grid">
-            {HomeData.womenfashion.map((product) => (
+            {womenfashion.map((product) => (
               <div key={product.id} className="product-card">
-                <img src={product.image} alt={product.title} className="product-image"
+                <img 
+                src={`/images/${product.image}` || ""} 
+                alt={product.title} 
+                className="product-image"
                  onClick={() =>
                   navigate(`/product/${product.id}`, { state: { product: product } })
                 }

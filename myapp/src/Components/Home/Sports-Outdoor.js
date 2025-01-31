@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState ,useEffect} from "react";
 import '../../App.css';
 import { useCart } from "react-use-cart";
 import Sidebar from "./Sidebar" ;
 import { Route, Routes } from "react-router-dom";
-import HomeData from "./HomeData";
 import { useNavigate } from "react-router-dom";
-import { color } from 'framer-motion';
-export default function HealthBeauty() {
+export default function SportsOutdoor() {
   const { addItem } = useCart();
   const navigate = useNavigate();
+  const [sportsoutdoor, setSportsoutdoor] = useState([]);
+  useEffect(()=>{
+          fetch("https://e-commerce-app-33918-default-rtdb.firebaseio.com/sportsoutdoor.json")
+          .then((response) =>{
+            response.json().then((result) => {
+              setSportsoutdoor(result);
+            })
+          })
+        });
 
 
   const renderStars = (rating) => {
@@ -32,9 +39,9 @@ export default function HealthBeauty() {
         <div className="home-sidber-container">
           <h1>Sports & Outdoor</h1>
           <div className="product-grid">
-            {HomeData.SportsOutdoor.map((product) => (
+            {sportsoutdoor.map((product) => (
               <div key={product.id} className="product-card">
-                <img src={product.image} alt={product.title} className="product-image"
+                <img src={`/images/${product.image}` || ""} alt={product.title} className="product-image"
                  onClick={() =>
                   navigate(`/product/${product.id}`, { state: { product: product } })
                 }

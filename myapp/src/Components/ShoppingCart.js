@@ -13,7 +13,6 @@ export default function AddItemCart() {
   } = useCart();
 
   const navigate = useNavigate();
-
   if (isEmpty) return <h1 className="text-center">Your Cart is Empty</h1>;
 
   // Calculate total price manually
@@ -54,7 +53,7 @@ export default function AddItemCart() {
                         <td>
                           <div className="d-flex">
                             <img
-                              src={item.image}
+                              src={`/images/${item.image}` || ""}
                               className="img-thumbnail"
                               style={{ height: "4rem", width: "4rem" }}
                               alt="Product"

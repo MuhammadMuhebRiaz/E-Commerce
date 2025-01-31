@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import phoneImage from "./images/Side Image.png"; // Replace with your image path
+import phoneImage from "./images/side-image.png"; // Replace with your image path
 
 const Login = () => {
   return (

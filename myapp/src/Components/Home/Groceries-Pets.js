@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState ,useEffect} from "react";
 import '../../App.css';
 import { useCart } from "react-use-cart";
 import Sidebar from "./Sidebar" ;
 import { Route, Routes } from "react-router-dom";
-import HomeData from "./HomeData";
 import { useNavigate } from "react-router-dom";
-import { color } from 'framer-motion';
-export default function HealthBeauty() {
+
+export default function GroceriesPets() {
   const { addItem } = useCart();
   const navigate = useNavigate();
+  const [groceriespets, setGroceriesPets] = useState([]);
+  useEffect(()=>{
+          fetch("https://e-commerce-app-33918-default-rtdb.firebaseio.com/groceriespets.json")
+          .then((response) =>{
+            response.json().then((result) => {
+              setGroceriesPets(result);
+            })
+          })
+        });
 
 
   const renderStars = (rating) => {
@@ -32,9 +40,9 @@ export default function HealthBeauty() {
         <div className="home-sidber-container">
           <h1>Groceries & Pets</h1>
           <div className="product-grid">
-            {HomeData.GroceriesPets.map((product) => (
+            {groceriespets.map((product) => (
               <div key={product.id} className="product-card">
-                <img src={product.image} alt={product.title} className="product-image"
+                <img src={`/images/${product.image}` || ""} alt={product.title} className="product-image"
                  onClick={() =>
                   navigate(`/product/${product.id}`, { state: { product: product } })
                 }

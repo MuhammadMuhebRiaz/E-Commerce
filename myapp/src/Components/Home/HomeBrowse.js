@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import '../../App.css';
-import img1 from "../images/Category-CellPhone.png"
-import img2 from "../images/Category-Computer.png"
-import img3 from "../images/Category-SmartWatch.png"
-import img4 from "../images/Category-Camera.png"
-import img5 from "../images/Category-Headphone.png"
-import img6 from "../images/Category-Gamepad.png"
+import img1 from "../images/category-cellPhone.png"
+import img2 from "../images/category-computer.png"
+import img3 from "../images/category-smartWatch.png"
+import img4 from "../images/category-camera.png"
+import img5 from "../images/category-headphone.png"
+import img6 from "../images/category-gamepad.png"
 
 export default function HomeBrowse() {
 
@@ -45,7 +45,7 @@ export default function HomeBrowse() {
         <div className="categories">
           {categories.slice(BrowseIndex, BrowseIndex + 4).map((cat) => (
             <div key={cat.name} className={`category-item ${ selectedCategory === cat.name ? "selected" : "" }`} onClick={() => handleCategoryClick(cat.name)} >
-              <img src={cat.icon} alt={cat.name} className="category-icon" />
+              <img  src={cat.icon} alt={cat.name} className="category-icon" />
               <span>{cat.name}</span>
             </div>
           ))}

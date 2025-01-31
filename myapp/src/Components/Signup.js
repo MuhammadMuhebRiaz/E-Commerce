@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import phoneImage from "./images/Side Image.png";
+import phoneImage from "./images/side-image.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle} from '@fortawesome/free-brands-svg-icons';
 

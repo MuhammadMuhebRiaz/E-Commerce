@@ -1,32 +1,37 @@
 import React, { useState, useEffect } from "react";
 import "../../App.css";
-import Sidebar from "./Sidebar" ;
-import { Route, Routes } from "react-router-dom";
-
-import logo from "../images/1200px-Apple_gray_logo 1.png";
-import img1 from "../images/Iphone14.jpg";
+import Sidebar from "./Sidebar";
+import { useNavigate, Route, Routes } from "react-router-dom";
 
 export default function HomeSidebarCategories() {
-  const slides = [
-    { id: 1, image: img1, title: "iPhone 14 Series", discount: "10%" },
-    { id: 2, image: img1, title: "iPhone 14 Series", discount: "15%" },
-    { id: 3, image: img1, title: "iPhone 14 Series", discount: "20%" },
-    { id: 4, image: img1, title: "iPhone 14 Series", discount: "25%" },
-    { id: 5, image: img1, title: "iPhone 14 Series", discount: "30%" },
-  ];
-
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slider, setSlider] = useState([]);
 
+  // Fetch slider data
   useEffect(() => {
+    fetch("https://e-commerce-app-33918-default-rtdb.firebaseio.com/slides.json")
+      .then((response) => {
+        response.json().then((result) => {
+          setSlider(result);
+        });
+      });
+  }, []);
+
+  // Auto slider
+  useEffect(() => {
+    if (!slider || slider.length === 0) return;
+
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+        prevIndex === slider.length - 1 ? 0 : prevIndex + 1
       );
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, [slides.length]);
+  }, [slider]);
 
+  // Dot click handler
   const handleDotClick = (index) => {
     setCurrentIndex(index);
   };
@@ -35,35 +40,54 @@ export default function HomeSidebarCategories() {
     <div className="home-container">
       {/* Sidebar */}
       <Routes>
-              <Route path="*" element={<Sidebar/>} />
+        <Route path="*" element={<Sidebar />} />
       </Routes>
+
       {/* Main Banner */}
       <div className="main-banner">
         <div className="banner-content">
-          <img src={logo} alt="Apple Logo" className="apple-logo" />
-          <h2>{slides[currentIndex]?.title || "Loading..."}</h2>
-          <p>
-            Up to {slides[currentIndex]?.discount || "0%"} <br /> off Voucher
-          </p>
-          <a href="#" className="shop-now-btn">
-            Shop Now <i className="bi bi-arrow-right"></i>
-          </a>
+          {slider.length > 0 && (
+            <div>
+              <img
+                src={`/images/${slider[currentIndex].logo}` || ""}
+                alt="Logo"
+                className="apple-logo"
+              />
+              <h2>{slider[currentIndex]?.title || "Special Offers"}</h2>
+              <p>
+                Up to {slider[currentIndex]?.discount || "0%"} <br /> off Voucher
+              </p>
+              <a href="/Electronics" className="shop-now-btn">
+                Shop Now <i className="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          )}
         </div>
-        <img
-          src={slides[currentIndex]?.image || ""}
-          alt={slides[currentIndex]?.title || "Banner"}
-          className="banner-image"
-        />
+
+        {slider.length > 0 && (
+          <img
+            src={`/images/${slider[currentIndex].image}` || ""}
+            alt={slider[currentIndex]?.title || "Banner"}
+            className="banner-image"
+            onClick={() =>
+              navigate(`/product/${slider[currentIndex]?.id}`, {
+                state: { product: slider[currentIndex] },
+              })
+            }
+          />
+        )}
+
         {/* Dots Navigation */}
         <div className="dots">
-          {slides.map((_, index) => (
-            <span
-              key={index}
-              className={`dot ${currentIndex === index ? "active" : ""}`}
-              onClick={() => handleDotClick(index)}
-              aria-label={`Slide ${index + 1}`}
-            ></span>
-          ))}
+          {Array.isArray(slider) &&
+            slider.map((_, index) => (
+              <span
+                key={index}
+                className={`dot ${index === currentIndex ? "active" : ""}`}
+                onClick={() => handleDotClick(index)}
+                aria-label={`Slide ${index + 1}`}
+              ></span>
+            ))}
         </div>
       </div>
     </div>

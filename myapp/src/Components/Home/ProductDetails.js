@@ -9,16 +9,21 @@ export default function ProductDetails() {
   const navigate = useNavigate();
   const product = location.state?.product;
 
-  const [mainImage, setMainImage] = useState(
-    product?.images ? product.images[0] : product?.image
-  );
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
-  const [quantity, setQuantity] = useState(1); 
+  const [quantity, setQuantity] = useState(1);
 
-  // Scroll to top on route change
+  const images =
+    Array.isArray(product?.images) && product.images1.length > 0
+      ? product.images.slice(0, 4)
+      : [product?.image, product?.images1, product?.image, product?.images1];
+
+  const [currentImageIndex,setCurrentImageIndex] = useState(0);
+
+  const mainImage = images[currentImageIndex] || "/fallback-image.jpg";
+
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
 
   const formatPrice = (price) => {
@@ -45,6 +50,7 @@ export default function ProductDetails() {
     );
   };
 
+
   if (!product) {
     return (
       <div>
@@ -53,15 +59,6 @@ export default function ProductDetails() {
       </div>
     );
   }
-
-  const imagesToDisplay =
-    Array.isArray(product.images) && product.images.length > 0
-      ? product.images.slice(0, 4)
-      : [product.image, 
-         product.image, 
-         product.image,
-         product.image1
-        ];
 
   return (
     <>
@@ -72,40 +69,42 @@ export default function ProductDetails() {
         <div className="product-details">
           <div className="gallery">
             <div className="main-image">
-              <AnimatePresence mode="wait">
-              <motion.img
-                key={mainImage}
-                src={mainImage || "/fallback-image.jpg"}
-                alt={product.title || "Product Image"}
-                className="large-img"
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 2 }}
-                exit={{ opacity: 0, x: 50 }}
-                transition={{ duration: 0.5 }}
-              />
 
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={mainImage}
+                  src={`/images/${mainImage}` || "/fallback-image.jpg"}
+                  alt={product.title || "Product Image"}
+                  className="large-img"
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 50 }}
+                  transition={{ duration: 0.5 }}
+                />
               </AnimatePresence>
             </div>
 
             <div className="thumbnails">
-              {imagesToDisplay.map((image, index) => (
+              {images.map((image, index) => (
                 <img
-                key={index}
-                src={image || "/fallback-image.jpg"}
-                className="small-img"
-                alt={`Thumbnail ${index + 1}`}
-                style={{
-                  border: mainImage === image ? "2px solid blue" : "1px solid #ccc",
-                }}
-                onClick={() => setMainImage(image || "/fallback-image.jpg")}
-              />
+                  key={index}
+                  src={`/images/${image}` || "/fallback-image.jpg"}
+                  className="small-img"
+                  alt={`Thumbnail ${index + 1}`}
+                  style={{
+                    border:
+                      currentImageIndex === index
+                        ? "2px solid blue"
+                        : "1px solid #ccc",
+                  }}
+                  onClick={() => setCurrentImageIndex(index)}
+                />
               ))}
             </div>
           </div>
 
           <div className="product-info">
             <h1>{product.title}</h1>
-
             <p className="rating">
               {renderStars(product.rating)}
               <span style={{ fontSize: "12px", color: "#0000003b", marginLeft: "5px" }}>
@@ -181,7 +180,6 @@ export default function ProductDetails() {
               )}
             </div>
 
-            {/* Quantity Box */}
             <div className="quantity-box">
               <button
                 onClick={() => handleQuantityChange("decrement")}
@@ -199,10 +197,14 @@ export default function ProductDetails() {
               </button>
             </div>
             <div>
-              <button className="product-buy-now">Buy Now</button>
+              <button className="product-buy-now"
+              onClick={() =>
+                navigate("/buynow", { state: { product: product } })
+              } >
+              Buy Now
+              </button>
             </div>
 
-            {/* Delivery Info */}
             <div className="delivery-info">
               <div className="info-block">
                 <i className="fas fa-truck"></i>
@@ -230,4 +232,3 @@ export default function ProductDetails() {
     </>
   );
 }
-
